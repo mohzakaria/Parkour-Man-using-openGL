@@ -20,7 +20,7 @@ void main(){
     //Zakariaa
     // changing the position using the transform matrix
     gl_Position = transform*vec4(position, 1.0f);
-    
+    //
     // No need to change any of the following lines
     vs_out.position = position;
     vs_out.color = color;
