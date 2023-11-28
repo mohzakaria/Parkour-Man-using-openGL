@@ -1,0 +1,10 @@
+^C:\USERS\MOMO\DOWNLOADS\CMPN205 PROJECT - STUDENT VERSION\CMPN205 PROJECT - STUDENT VERSION\VENDOR\GLFW\SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version" "-BC:/Users/Momo/Downloads/CMPN205 Project - Student Version/build" --check-stamp-file "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/vendor/glfw/src/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
