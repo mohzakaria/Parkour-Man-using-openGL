@@ -29,7 +29,6 @@ void main(){
         vec3(1.0, 0.0, 0.0), 
         vec3(0.0, 1.0, 0.0), 
         vec3(0.0, 0.0, 1.0)
-        //
     );
 
     // gl_VertexID is a builtIn variable that determine the vertex index
