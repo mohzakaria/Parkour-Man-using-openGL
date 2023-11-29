@@ -56,7 +56,7 @@ namespace our {
         //bind the sampler to a texture unit
         if (sampler)
         {
-            sampler->bind(0)
+            sampler->bind(0);
         }
 
         //send the unit number"0" to the uniform variable "tex"
