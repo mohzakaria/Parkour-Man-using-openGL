@@ -16,8 +16,7 @@ uniform mat4 transform;
 
 void main(){
     //TOD: (Req 3) Change the next line to apply the transformation matrix
-    //Abdullahhhh
-    //Zakariaa
+
     // changing the position using the transform matrix
     gl_Position = transform*vec4(position, 1.0f);
     
