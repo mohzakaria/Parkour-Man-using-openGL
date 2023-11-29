@@ -22,7 +22,7 @@ bool our::ShaderProgram::attach(const std::string &filename, GLenum type) const 
 
     //TODO: Complete this function
     //Note: The function "checkForShaderCompilationErrors" checks if there is
-    // an error in the given shader. You should use it to check if there is a
+// an error in the given shader. You should use it to check if there is a
     // compilation error and print it so that you can know what is wrong with
     // the shader. The returned string will be empty if there is no errors.
 
@@ -47,14 +47,10 @@ bool our::ShaderProgram::attach(const std::string &filename, GLenum type) const 
 
 
 bool our::ShaderProgram::link() const {
-    //TODO: Complete this function
-    //Note: The function "checkForLinkingErrors" checks if there is
-    // an error in the given program. You should use it to check if there is a
-    // linking error and print it so that you can know what is wrong with the
-    // program. The returned string will be empty if there is no errors.
+    
     glLinkProgram(program); // to link the program with vertex shader or geomtry shader or fragment shader, they will be used to create an executable
     if (checkForLinkingErrors(program) != "")
-    {
+{
         std::cout << checkForLinkingErrors(program);
         return false;
     }

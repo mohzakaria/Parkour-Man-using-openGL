@@ -32,9 +32,13 @@ namespace our {
         }
 
         GLuint getUniformLocation(const std::string &name) {
+            //this function will return -1 if it didnt find the locaation
             return glGetUniformLocation(program, name.c_str());// Uniform variables in shaders are used to pass data from the application (CPU) to the shader programs (GPU)
         }
+       //////////////////////////////////////////////
+       //now we will use getUniformLocation() function
 
+       // and these functions will just 
         void set(const std::string &uniform, GLfloat value) {
              glUniform1f(getUniformLocation(uniform), value);
         }

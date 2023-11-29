@@ -37,7 +37,7 @@ namespace our
             GLenum destinationFactor = GL_ONE_MINUS_SRC_ALPHA;
             glm::vec4 constantColor = {0, 0, 0, 0};
         } blending;
-        //         GL_SRC_ALPHA: The alpha value of the source color is used as the blending factor. This is often used for rendering translucent objects, where the source alpha represents the degree of transparency.
+        //GL_SRC_ALPHA: The alpha value of the source color is used as the blending factor. This is often used for rendering translucent objects, where the source alpha represents the degree of transparency.
 
         // GL_ONE: The source color is fully used without any modification. This can be used for additive blending, where the source color is added to the destination color.
 
