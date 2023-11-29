@@ -31,8 +31,9 @@ void main(){
         vec3(0.0, 0.0, 1.0)
     );
 
-    // gl_VertexID is a builtIn variable that determine the vertex index
+    //retrieves the position and color of the current vertex from the arrays using gl_VertexID.
     vec3 vertexPosition = positions[gl_VertexID];
+    //we will apply scaling (scale variable) to the x and y components of the vertex position and translates (translation variable) the vertex position accordingly.
     vertexPosition.xy *= scale;
     vertexPosition.xy += translation;
 
