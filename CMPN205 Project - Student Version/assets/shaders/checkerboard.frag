@@ -7,26 +7,16 @@ out vec4 frag_color;
 // should have the color "colors[1]".
 
 //TODO: (Req 1) Finish this shader.
-
+// Uniform variable specifying the size of each tile
 uniform int size = 32;
+
+// Array holding the colors for the two types of tiles (colors[0] for even indices, colors[1] for odd indices)
 uniform vec3 colors[2];
 
 void main(){
-
-    // Assuming that the checkboards will always have an even number of tiles, we can conclude that
-    // the tiles with an even sum of indices will have the same color of the bottom left most tile. And the tiles
-    // with odd sum of indices will have the other color. Our index will start from 0 to the [NumberOfTiles - 1].
-    // The origin of our screen (0,0) is at the bottom-left. that's why our indices start from there
-    // Here is a simple illustration for a checkboard with a size of 4:
-    //         -------------
-    //        |      |      |
-    //     1  | c[1] | c[0] |
-    //        ---------------
-    //     0  | c[0] | c[1] |
-    //        |      |      |
-    //        ---------------
-    //           0      1
-
+    // Calculate the tile indices in both x and y directions based on the fragment's position
+    //gl_FragCoord.x and gl_FragCoord.y: These are built-in variables in GLSL representing the screen-space coordinates of the fragment being processed.
+    uint tileXindex = uint(gl_FragCoord.x / float(size));
     uint tileXindex = uint(gl_FragCoord.x / float(size));
     uint tileYindex = uint(gl_FragCoord.y / float(size));
     bool isSumOfIndicesEven = mod((tileXindex + tileYindex), 2) == 0;
