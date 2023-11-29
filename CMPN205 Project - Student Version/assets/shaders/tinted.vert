@@ -11,6 +11,6 @@ uniform mat4 transform;
 
 void main(){
     //TODO: (Req 7) Change the next line to apply the transformation matrix
-    gl_Position = vec4(position, 1.0);
+    gl_Position = trasform*vec4(position, 1.0); //modified this line to multiply the transformation matrix "transform" to vertex position
     vs_out.color = color;
 }
