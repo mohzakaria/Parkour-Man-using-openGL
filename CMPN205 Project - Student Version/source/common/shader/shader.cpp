@@ -45,7 +45,7 @@ bool our::ShaderProgram::attach(const std::string &filename, GLenum type) const 
 }
 
 
-
+//
 bool our::ShaderProgram::link() const {
     
     glLinkProgram(program); // to link the program with vertex shader or geomtry shader or fragment shader, they will be used to create an executable
