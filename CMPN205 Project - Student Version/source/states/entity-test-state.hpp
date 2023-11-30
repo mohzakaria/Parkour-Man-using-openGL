@@ -46,13 +46,37 @@ class EntityTestState: public our::State {
         glm::ivec2 size = getApp()->getFrameBufferSize();
         //TODO: (Req 8) Change the following line to compute the correct view projection matrix 
         glm::mat4 VP = glm::mat4(1.0f);
+        //TOD: (Req 8) Change the following line to compute the correct view projection matrix 
+        
+        /*
+        To compute the correct view projection matrix we need to multiply the projection matrix by the view matrix
+        */
+        glm ::mat4 VP = camera->getProjectionMatrix(size) * camera->getViewMatrix();
+        
+        // glm::mat4 VP = glm::mat4(1.0f);
 
         for(auto& entity : world.getEntities()){
             // For each entity, we look for a mesh renderer (if none was found, we skip this entity)
             our::MeshRendererComponent* meshRenderer = entity->getComponent<our::MeshRendererComponent>();
             if(meshRenderer == nullptr) continue;
             //TODO: (Req 8) Complete the loop body to draw the current entity
+            //TOD: (Req 8) Complete the loop body to draw the current entity
             // Then we setup the material, send the transform matrix to the shader then draw the mesh
+
+            /*
+            first we get the material from mesh renderer
+            if its null we skip the entity
+            then we setup the material 
+            then we form the transform matrix by multiplying the view projection matrix by the local to world matrix
+            then we send the transform matrix to the shader
+            then we draw the mesh
+            */
+            our::Material* ptrMaterial = meshRenderer->getMaterial();
+            if(ptrMaterial == nullptr) continue;
+            ptrMaterial->setup();
+            glm::mat4 transformMatrix = VP * entity->getLocalToWorldMatrix();
+            ptrMaterial->shader->set("transform", transformMatrix);
+            meshRenderer->mesh->draw();
         }
     }
 
