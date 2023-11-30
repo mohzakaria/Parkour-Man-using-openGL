@@ -35,28 +35,35 @@ namespace our
             //  For the attribute locations, use the constants defined above: ATTRIB_LOC_POSITION, ATTRIB_LOC_COLOR, etc
             //  Generate and bind the Vertex Array Object (VAO)
 
-            glGenVertexArrays(1, &VAO);
-            glGenBuffers(1, &VBO);
-            glGenBuffers(1, &EBO);
 
-            glBindVertexArray(VAO); // generate single vertex buffer with name VBO to store vertex data
-            glBindBuffer(GL_ARRAY_BUFFER, VBO);
-            // binds it to opengl target GL_ARRAY_BUFFER that typically stores positions, colors, texture coordinates
-            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), vertices.data(), GL_STATIC_DRAW); // allocate memory for data : gl_static means that data will be used for drawing and not frequently changed
+            glGenVertexArrays(1, &VAO);// generate single vertex array object with name VAO
+            glGenBuffers(1, &VBO);// generate single vertex buffer with name VBO to store vertex data: pos/normals/colors
+            glGenBuffers(1, &EBO);//generate element array buffer that holds indices that reference vertices in vertex buffer
 
-            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-            glBufferData(GL_ELEMENT_ARRAY_BUFFER, elements.size() * sizeof(unsigned int), elements.data(), GL_STATIC_DRAW);
-
-            // generate single vertex array object with name VAO
-            // bind the generated array object to be the active container fo any susequent
+            glBindVertexArray(VAO); // bind the generated array object to be the active container fo any susequent
             // configurations making it the current vao which means that all subsequent vertex-related configurations
             //  and operations will be applied to this specific VAO until it's unbound or another VAO is bound
 
-            elementCount = elements.size();
-            glEnableVertexAttribArray(ATTRIB_LOC_POSITION);
-            glVertexAttribPointer(ATTRIB_LOC_POSITION, 3, GL_FLOAT, false, sizeof(Vertex), (void *)0);
+            glBindBuffer(GL_ARRAY_BUFFER, VBO);// binds it to opengl target GL_ARRAY_BUFFER that typically stores positions, colors, texture coordinates
+            glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(Vertex), vertices.data(), GL_STATIC_DRAW); // allocate memory for data : gl_static means that data will be used for drawing and not frequently changed
 
-            glEnableVertexAttribArray(ATTRIB_LOC_COLOR);
+            glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);//binds buffer pbject to target will be used as the element array buffer for subsequent operations
+            glBufferData(GL_ELEMENT_ARRAY_BUFFER, elements.size() * sizeof(unsigned int), elements.data(), GL_STATIC_DRAW);
+
+
+            elementCount = elements.size();
+
+            glEnableVertexAttribArray(ATTRIB_LOC_POSITION);//enables the vertex attribute array specified by ATTRIB_LOC_POSITION 
+            //which is constant that represents the index of the vertex attr in the shader program.
+            glVertexAttribPointer(ATTRIB_LOC_POSITION, 3, GL_FLOAT, false, sizeof(Vertex), (void *)0);
+            //specifies the structure of the vertex attribute arrays 3--> three components per vertex attribute
+            //GL_FLOAT --> datatype is float
+            //false--> data WILL NOT be normalizsed
+            //sizef0f(vertex)--> the  byte offset between consecutive veretx sttribute in the array
+            //(void*)0--> the byte offset within vertex buffer object to locate the first component of the attribute
+            // is set to the begining of the vertex struct
+
+            glEnableVertexAttribArray(ATTRIB_LOC_COLOR);//enables the vertex attr array specified by ATTRIB_LOC_COLOR 
             glVertexAttribPointer(ATTRIB_LOC_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(Vertex), (void *)offsetof(Vertex, color));
 
             glEnableVertexAttribArray(ATTRIB_LOC_TEXCOORD);
@@ -65,7 +72,7 @@ namespace our
             glEnableVertexAttribArray(ATTRIB_LOC_NORMAL);
             glVertexAttribPointer(ATTRIB_LOC_NORMAL, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void *)offsetof(Vertex, normal));
 
-            glBindVertexArray(0);
+            glBindVertexArray(0);//
         }
 
         // this function should render the mesh
