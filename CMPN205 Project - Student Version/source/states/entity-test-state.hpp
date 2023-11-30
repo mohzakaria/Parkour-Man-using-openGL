@@ -68,7 +68,7 @@ class EntityTestState: public our::State {
             then we send the transform matrix to the shader
             then we draw the mesh
             */
-            our::Material* ptrMaterial = meshRenderer->getMaterial();
+            our::Material* ptrMaterial = meshRenderer->material;
             if(ptrMaterial == nullptr) continue;
             ptrMaterial->setup();
             glm::mat4 transformMatrix = VP * entity->getLocalToWorldMatrix();
