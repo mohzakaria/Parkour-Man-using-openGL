@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version"
+  "cmake.sourceDirectory": "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version",
+  "files.associations": {
+    "xhash": "cpp"
+  }
 }

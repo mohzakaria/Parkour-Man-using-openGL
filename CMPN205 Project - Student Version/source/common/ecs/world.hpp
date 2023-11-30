@@ -24,9 +24,19 @@ namespace our {
         // to put it in the "markedForRemoval" set. The elements in the "markedForRemoval" set will be removed and
         // deleted when "deleteMarkedEntities" is called.
         Entity* add() {
-            //TODO: (Req 8) Create a new entity, set its world member variable to this,
+            //TOD: (Req 8) Create a new entity, set its world member variable to this,
             // and don't forget to insert it in the suitable container.
-            return nullptr;
+
+            /*
+            First Create new entity
+            Then set its world to this
+            Then insert it to entities container
+            Finally return the entity
+            */
+            Entity* addEntity = new Entity();
+            addEntity->world = this;
+            entities.insert(addEntity);
+            return addEntity;
         }
 
         // This returns and immutable reference to the set of all entites in the world.
@@ -37,18 +47,58 @@ namespace our {
         // This marks an entity for removal by adding it to the "markedForRemoval" set.
         // The elements in the "markedForRemoval" set will be removed and deleted when "deleteMarkedEntities" is called.
         void markForRemoval(Entity* entity){
-            //TODO: (Req 8) If the entity is in this world, add it to the "markedForRemoval" set.
+            //TOD: (Req 8) If the entity is in this world, add it to the "markedForRemoval" set.
+            
+            /*
+            First Check if entity is from this world
+            then add it to markedForRemoval set
+            */
+            for (auto it = entities.begin(); it != entities.end(); it++) 
+            {
+                if (*it == entity) 
+                {
+                    markedForRemoval.insert(entity);
+                }
+            }
         }
 
         // This removes the elements in "markedForRemoval" from the "entities" set.
         // Then each of these elements are deleted.
         void deleteMarkedEntities(){
-            //TODO: (Req 8) Remove and delete all the entities that have been marked for removal
+            //TOD: (Req 8) Remove and delete all the entities that have been marked for removal
+            
+            /*
+            itterate over markedForRemoval set
+            then delete the entity and erase it from entities and markedForRemoval
+            */
+            //Test?
+            for (auto it = markedForRemoval.begin(); it != markedForRemoval.end(); it++) 
+            {
+                delete *it;
+                entities.erase(it);
+                markedForRemoval.erase(it);
+            }
         }
 
         //This deletes all entities in the world
         void clear(){
-            //TODO: (Req 8) Delete all the entites and make sure that the containers are empty
+            //TOD: (Req 8) Delete all the entites and make sure that the containers are empty
+
+            /*
+            first call deleteMarkedEntities
+            then clear the markedForRemoval set
+            then itterate over entities set
+            then delete the entity and erase it from entities
+            finally clear the entities set
+            */
+            deleteMarkedEntities();
+            markedForRemoval.clear();
+            for (auto it = entities.begin(); it != entities.end(); it++) 
+            {
+                delete *it;
+                entities.erase(it);
+            }
+            entities.clear();
         }
 
         //Since the world owns all of its entities, they should be deleted alongside it.
