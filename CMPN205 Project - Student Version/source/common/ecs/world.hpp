@@ -97,7 +97,7 @@ namespace our {
             for (auto it = entities.begin(); it != entities.end(); it++) 
             {
                 delete *it;
-                // entities.erase(it);
+                //entities.erase(it);
             }
             entities.clear();
         }
