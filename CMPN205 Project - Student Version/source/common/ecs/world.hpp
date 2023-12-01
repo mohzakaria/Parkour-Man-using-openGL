@@ -76,7 +76,7 @@ namespace our {
             {
                 delete *it;
                 entities.erase(it);
-                // markedForRemoval.erase(it);
+                //markedForRemoval.erase(it);
             }
             markedForRemoval.clear();
         }
@@ -97,7 +97,7 @@ namespace our {
             for (auto it = entities.begin(); it != entities.end(); it++) 
             {
                 delete *it;
-                entities.erase(it);
+                // entities.erase(it);
             }
             entities.clear();
         }
