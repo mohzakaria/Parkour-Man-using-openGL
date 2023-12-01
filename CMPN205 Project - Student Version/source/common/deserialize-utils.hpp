@@ -5,7 +5,7 @@
 #include <string>
 #include <unordered_map>
 #include <json/json.hpp>
-
+//
 // This file contains some helper code for deserialization which includes:
 // - Deserializing glm vectors from json via nlohmann::json
 // - Converting strings to GLenums
