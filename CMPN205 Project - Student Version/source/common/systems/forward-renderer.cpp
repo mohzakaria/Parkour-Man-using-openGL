@@ -27,12 +27,12 @@ namespace our
             //  We will draw the sphere from the inside, so what options should we pick for the face culling.
             PipelineState skyPipelineState{};
 
-            skyPipelineState.faceCulling.enabled = true;        // enable faceculling 
-            skyPipelineState.depthTesting.enabled = true;       // enabling depth testing
+            skyPipelineState.faceCulling.enabled = true;  // enable faceculling
+            skyPipelineState.depthTesting.enabled = true; // enabling depth testing
 
             skyPipelineState.depthTesting.function = GL_LEQUAL; // drawing iff depth is less than or equal the current one
             skyPipelineState.faceCulling.culledFace = GL_FRONT; // culling front faces(drawing from inside)
-            skyPipelineState.faceCulling.frontFace = GL_CCW;     
+            skyPipelineState.faceCulling.frontFace = GL_CCW;
 
             // Load the sky texture (note that we don't need mipmaps since we want to avoid any unnecessary blurring while rendering the sky)
             std::string skyTextureFile = config.value<std::string>("sky", "");
@@ -187,10 +187,17 @@ namespace our
         if (this->skyMaterial)
         {
             // TODO: (Req 10) setup the sky material
+            skyMaterial->setup();
 
             // TODO: (Req 10) Get the camera position
+            glm::vec3 cameraPosition = camera->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
 
             // TODO: (Req 10) Create a model matrix for the sy such that it always follows the camera (sky sphere center = camera position)
+            glm::mat4 modelMatrix = glm::mat4(
+                1.0f, 0.0f, 0.0f, 0.0f,
+                0.0f, 1.0f, 0.0f, 0.0f,
+                0.0f, 0.0f, 1.0f, 0.0f,
+                cameraPosition.x, cameraPosition.y, cameraPosition.z);
 
             // TODO: (Req 10) We want the sky to be drawn behind everything (in NDC space, z=1)
             //  We can acheive the is by multiplying by an extra matrix after the projection but what values should we put in it?
@@ -200,8 +207,9 @@ namespace our
                 0.0f, 0.0f, 1.0f, 0.0f,
                 0.0f, 0.0f, 0.0f, 1.0f);
             // TODO: (Req 10) set the "transform" uniform
-
+            skyMaterial->shader->set("transform", alwaysBehindTransform* VP * modelMatrix);
             // TODO: (Req 10) draw the sky sphere
+            skySphere->draw();
         }
         // TODO: (Req 9) Draw all the transparent commands
         //  Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
