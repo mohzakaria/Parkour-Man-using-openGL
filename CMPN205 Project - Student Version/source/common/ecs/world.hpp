@@ -76,8 +76,9 @@ namespace our {
             {
                 delete *it;
                 entities.erase(it);
-                markedForRemoval.erase(it);
+                //markedForRemoval.erase(it);
             }
+            markedForRemoval.clear();
         }
 
         //This deletes all entities in the world
@@ -92,11 +93,11 @@ namespace our {
             finally clear the entities set
             */
             deleteMarkedEntities();
-            markedForRemoval.clear();
+            // markedForRemoval.clear();
             for (auto it = entities.begin(); it != entities.end(); it++) 
             {
                 delete *it;
-                entities.erase(it);
+                //entities.erase(it);
             }
             entities.clear();
         }

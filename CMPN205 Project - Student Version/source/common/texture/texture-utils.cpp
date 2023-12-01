@@ -8,7 +8,19 @@
 our::Texture2D* our::texture_utils::empty(GLenum format, glm::ivec2 size){
     our::Texture2D* texture = new our::Texture2D();
     //TODO: (Req 11) Finish this function to create an empty texture with the given size and format
-
+    texture->bind(); // Binding texture
+    
+    //The glTexImage2D function is an OpenGL function used to specify and allocate storage for a 2D texture.
+    //GL_TEXTURE_2D: Specifies the target texture. In this case, it's a 2D texture.
+    //0: Specifies the level-of-detail number. Level 0 is the base image level. 
+    //format: Specifies the internal format of the texture. 
+    //size.x and size.y: Specify the width and height of the texture in texels (texture elements).
+    //0: Specifies the border width.
+    //format: Specifies the format of the pixel data.
+    //GL_UNSIGNED_BYTE: Specifies the type of the pixel data. It indicates that the data is a sequence of unsigned bytes.
+    //nullptr: Specifies a pointer to the image data. In this case, 
+    //it's nullptr because the function is used to allocate storage for an empty texture, and the actual image data will be provided later.
+    glTexImage2D(GL_TEXTURE_2D, 0, format, size.x, size.y, 0, format, GL_UNSIGNED_BYTE, nullptr);
     return texture;
 }
 
@@ -35,7 +47,14 @@ our::Texture2D* our::texture_utils::loadImage(const std::string& filename, bool 
     our::Texture2D* texture = new our::Texture2D();
     //Bind the texture such that we upload the image data to its storage
     //TODO: (Req 5) Finish this function to fill the texture with the data found in "pixels"
-    
+    texture->bind();//binding texture
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, size.x, size.y, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixels);
+    if(generate_mipmap)
+    {
+        glGenerateMipmap(GL_TEXTURE_2D);;
+    }
+
+
     stbi_image_free(pixels); //Free image data after uploading to GPU
     return texture;
 }

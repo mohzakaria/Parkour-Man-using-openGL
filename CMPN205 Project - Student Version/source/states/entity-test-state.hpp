@@ -49,7 +49,7 @@ class EntityTestState: public our::State {
         /*
         To compute the correct view projection matrix we need to multiply the projection matrix by the view matrix
         */
-        glm ::mat4 VP = camera->getProjectionMatrix(size) * camera->getViewMatrix();
+        glm::mat4 VP = camera->getProjectionMatrix(size) * camera->getViewMatrix();
         
         // glm::mat4 VP = glm::mat4(1.0f);
 
