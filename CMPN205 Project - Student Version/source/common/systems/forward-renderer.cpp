@@ -152,19 +152,21 @@ namespace our
         //  HINT: See how you wrote the CameraComponent::getViewMatrix, it should help you solve this one
 
         /////////////////////////////////////
-        glm::mat4 viewMatrix = camera->getViewMatrix();
-        glm::vec3 cameraForward = -glm::vec3(viewMatrix[2]);
+        glm::vec3 cameraForward =camera->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0, 0.0, -1.0f,0.0f);
+        auto owner = camera->getOwner();
+        auto M = owner->getLocalToWorldMatrix();
+        glm::vec3 eye = M * glm::vec4(0, 0, 0, 1);
 
         ///////////////////////////////////////////
         std::sort(transparentCommands.begin(), transparentCommands.end(), [cameraForward](const RenderCommand &first, const RenderCommand &second)
                   {
             //TODO: (Req 9) Finish this function
             // HINT: the following return should return true "first" should be drawn before "second". 
-            float distanceFirst = glm::dot(cameraForward, first.center );
-            float distanceSecond = glm::dot(cameraForward, second.center );
+            // float distanceFirst = glm::dot(cameraForward.z, first.center.z) ;
+            // float distanceSecond = glm::dot(cameraForward.z, second.center.z );
                 // it just compare between the two distance
                // The command with a greater distance should come first in the sorted list
-               return distanceFirst > distanceSecond; });
+               return first.center.z > second.center.z; });
 
         // TODO: (Req 9) Get the camera ViewProjection matrix and store it in VP
         glm::mat4 VP = camera->getProjectionMatrix(windowSize) * camera->getViewMatrix();
@@ -190,18 +192,15 @@ namespace our
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         // TODO: (Req 9) Draw all the opaque commands
         //  Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
-        for (auto x : opaqueCommands)
+        for (auto command : opaqueCommands)
         {
             // Calculate the model-view-projection matrix
-            glm::mat4 modelViewProjection = VP * x.localToWorld;
-
-            // Set the "transform" uniform in the shader to the model-view-projection matrix
-            x.material->shader->use();
-
-            x.material->shader->set("transform", modelViewProjection);
+            glm::mat4 modelViewProjection = VP * command.localToWorld;
+             command.material->setup();
+            command.material->shader->set("transform", modelViewProjection);
 
             // Perform the actual drawing
-            x.mesh->draw();
+            command.mesh->draw();
         }
 
         // If there is a sky material, draw the sky
@@ -226,17 +225,18 @@ namespace our
         }
         // TODO: (Req 9) Draw all the transparent commands
         //  Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
-        for (auto x: transparentCommands)
+        for (auto command: transparentCommands)
         {
             // Calculate the model-view-projection matrix
-            glm::mat4 modelViewProjection = VP * x.localToWorld;
+            glm::mat4 modelViewProjection = VP * command.localToWorld;
 
             // Set the "transform" uniform in the shader to the model-view-projection matrix
-            x.material->shader->use();
-            x.material->shader->set("transform", modelViewProjection);
+            command.material->setup();
+            command.material->shader->set("transform", modelViewProjection);
+
 
             // Perform the actual drawing
-            x.mesh->draw();
+            command.mesh->draw();
         }
         // If there is a postprocess material, apply postprocessing
         if (postprocessMaterial)
