@@ -92,13 +92,14 @@ namespace our {
             then delete the entity and erase it from entities
             finally clear the entities set
             */
-            deleteMarkedEntities();
+            //deleteMarkedEntities();
             // markedForRemoval.clear();
             for (auto it = entities.begin(); it != entities.end(); it++) 
             {
                 delete *it;
                 //entities.erase(it);
             }
+            markedForRemoval.clear();
             entities.clear();
         }
 
