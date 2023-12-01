@@ -105,7 +105,7 @@ namespace our {
         ~World(){
             clear();
         }
-
+         //
         // The world should not be copyable
         World(const World&) = delete;
         World &operator=(World const &) = delete;
