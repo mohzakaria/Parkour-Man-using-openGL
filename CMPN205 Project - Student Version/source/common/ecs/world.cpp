@@ -25,13 +25,9 @@ namespace our {
                 // and the current entity as the parent
                 
                 /*
-                We itterate over the children and call deserialize for each child recursively
+                We Call the deserialize function recursively with the children data and the current entity as the parent
                 */
-                for (auto it = entityData["children"].begin(); it != entityData["children"].end(); it++)
-                {
-                    deserialize(*it, desEntity);
-                }
-                
+                deserialize(entityData["children"],desEntity); 
             }
         }
     }
