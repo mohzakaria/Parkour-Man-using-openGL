@@ -74,8 +74,9 @@ namespace our {
             //Test?
             for (auto it = markedForRemoval.begin(); it != markedForRemoval.end(); it++) 
             {
-                delete *it;
                 entities.erase(it);
+                delete *it;
+                
                 //markedForRemoval.erase(it);
             }
             markedForRemoval.clear();
