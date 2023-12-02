@@ -29,10 +29,13 @@ bool our::ShaderProgram::attach(const std::string &filename, GLenum type) const 
     //We return true if the compilation succeeded
 
      // Create a shader object
+     //type here is the file type Like:GL_VERTEX_SHADER ,GL_FRAGMENT_SHADER
     GLuint shaderID = glCreateShader(type);
 
     // Attach the shader source code to the shader object
-    glShaderSource(shaderID, 1, &sourceCStr, nullptr);
+    glShaderSource(shaderID, 1, &sourceCStr, nullptr);//nullptr: This parameter represents an array of string lengths.
+    // Since modern OpenGL expects null-terminated strings for shader source code, the lengths are not explicitly provided (hence, nullptr).
+    //it provides length of the string
     glCompileShader(shaderID);
     if (checkForShaderCompilationErrors(shaderID) != "") //check if there's error on compilation
     {
