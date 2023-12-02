@@ -244,9 +244,11 @@ namespace our
             skyMaterial->setup();
 
             // TODO: (Req 10) Get the camera position
+            // get owner of camera then transform this relative to the world space then multiply by the this vector to get coordinates (select the last column of the matrix)
             glm::vec3 cameraPosition = camera->getOwner()->getLocalToWorldMatrix() * glm::vec4(0.0f, 0.0f, 0.0f, 1.0f);
 
             // TODO: (Req 10) Create a model matrix for the sy such that it always follows the camera (sky sphere center = camera position)
+            //multiply by the identity matrix and translate by the camera coordinates so that the sky always follows the camera 
             glm::mat4 cameraFollowerModelMatrix = glm::mat4(
                 1.0f, 0.0f, 0.0f, 0.0f,
                 0.0f, 1.0f, 0.0f, 0.0f,
@@ -254,13 +256,17 @@ namespace our
                 cameraPosition.x, cameraPosition.y, cameraPosition.z,1.0f);
 
             // TODO: (Req 10) We want the sky to be drawn behind everything (in NDC space, z=1)
-            //  We can acheive the is by multiplying by an extra matrix after the projection but what values should we put in it?
+            //We can acheive is by multiplying by an extra matrix after the projection but what values should we put in it?
+            //first multiply by the identity matrix except for the z coordinate we need to reset it to zero then add one this way we ensure that it is always drawn
+            //behind everything as it has the furthest depth z=1
             glm::mat4 behindTransform = glm::mat4(
                 1.0f, 0.0f, 0.0f, 0.0f,
                 0.0f, 1.0f, 0.0f, 0.0f,
                 0.0f, 0.0f, 0.0f, 0.0f,
                 0.0f, 0.0f, 1.0f, 1.0f);
             // TODO: (Req 10) set the "transform" uniform
+            //first translates the sky sphere so that it always follows the camera position then transform from world space to clip space then
+            //ensure that the sky is drawn at a depth of z = 1.0 in clip space 3D to 2D screen
             skyMaterial->shader->set("transform", behindTransform* VP * cameraFollowerModelMatrix);
             // TODO: (Req 10) draw the sky sphere
             skySphere->draw();
