@@ -176,7 +176,7 @@ namespace our
             // float distanceSecond = glm::dot(cameraForward.z, second.center.z );
                 // it just compare between the two distance
                // The command with a greater distance should come first in the sorted list
-               return first.center.z > second.center.z; });
+               return first.center.z < second.center.z; });
 
         // TODO: (Req 9) Get the camera ViewProjection matrix and store it in VP
         glm::mat4 VP = camera->getProjectionMatrix(windowSize) * camera->getViewMatrix();
