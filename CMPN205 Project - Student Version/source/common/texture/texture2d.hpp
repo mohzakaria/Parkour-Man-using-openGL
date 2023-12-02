@@ -29,9 +29,9 @@ namespace our {
         // This method binds this texture to GL_TEXTURE_2D
         void bind() const {
             //TODO: (Req 5) Complete this function
-            //from slides ?? to use multiple textures as long as activated first??
+            //from slides ?? maybe to use multiple textures as long as it is activated first
             glActiveTexture(GL_TEXTURE0);//activate the texture unit first before binding texture
-            glBindTexture(GL_TEXTURE_2D, name);
+            glBindTexture(GL_TEXTURE_2D, name);//binding the texture
         }
 
         // This static method ensures that no texture is bound to GL_TEXTURE_2D
