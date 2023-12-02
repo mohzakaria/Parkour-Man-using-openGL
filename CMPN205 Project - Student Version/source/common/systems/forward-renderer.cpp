@@ -63,12 +63,39 @@ namespace our
         if (config.contains("postprocess"))
         {
             // TODO: (Req 11) Create a framebuffer
+            glGenFramebuffers(1, &postprocessFrameBuffer);
+            glBindFramebuffer(GL_FRAMEBUFFER, postprocessFrameBuffer); //bing the target to GL_FRAMEBUFFER used for reading and drawing
 
             // TODO: (Req 11) Create a color and a depth texture and attach them to the framebuffer
             //  Hints: The color format can be (Red, Green, Blue and Alpha components with 8 bits for each channel).
             //  The depth format can be (Depth component with 24 bits).
+            colorTarget = new Texture2D();
+            colorTarget->bind();
+
+            // Allocating the texture memory for the color attachment
+            GLuint mip_levels = 1 + std::floor(std::log2(std::max<float>(windowSize.x, windowSize.y)));
+            glTexStorage2D(GL_TEXTURE_2D, mip_levels, GL_RGBA8, windowSize.x, windowSize.y);
+            // Attaching the color texture to the framebuffer
+            // glFramebufferTexture2D takes the following parameters:
+            //  - The target framebuffer: the framebuffer type we're targeting (draw, read or both).
+            //  - The attachment type: the type of attachment we're going to attach. Right now we're attaching a color attachment. The 0 at the end suggests we can attach more than 1 color attachment.
+            //  - The texture target: the type of the texture you want to attach.
+            //  - The texture: the actual texture identifier to attach.
+            //  - The mipmap level: the mipmap level. We keep this at 0.
+            glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, colorTarget->getOpenGLName(), 0);
+            // Doing the same for the depth attachment
+            depthTarget = new Texture2D();
+            depthTarget->bind();
+            // Depth component is a single channel texture, so we only need 1 mipmap level
+            glTexStorage2D(GL_TEXTURE_2D, 1, GL_DEPTH_COMPONENT24, windowSize.x, windowSize.y);
+            glFramebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthTarget->getOpenGLName(), 0);
+
+            if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
+                std::cerr << "Error::ForwardRenderer::initialize: Framebuffer is not complete!" << std::endl;
+            }
 
             // TODO: (Req 11) Unbind the framebuffer just to be safe
+            glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
             // Create a vertex array to use for drawing the texture
             glGenVertexArrays(1, &postProcessVertexArray);
@@ -195,6 +222,7 @@ namespace our
         if (postprocessMaterial)
         {
             // TODO: (Req 11) bind the framebuffer
+            glBindFramebuffer(GL_FRAMEBUFFER, postprocessFrameBuffer);
         }
 
         // TODO: (Req 9) Clear the color and depth buffers
@@ -260,8 +288,14 @@ namespace our
         if (postprocessMaterial)
         {
             // TODO: (Req 11) Return to the default framebuffer
-
+             glBindFramebuffer(GL_FRAMEBUFFER, 0);
             // TODO: (Req 11) Setup the postprocess material and draw the fullscreen triangle
+            //setup postprocess
+            postprocessMaterial->setup();
+            //draw fullscreen triangle
+            glBindVertexArray(postProcessVertexArray);
+            glDrawArrays(GL_TRIANGLES, 0, 3);
+            glBindVertexArray(0);
         }
     }
 
