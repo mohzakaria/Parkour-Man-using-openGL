@@ -17,7 +17,6 @@ void main(){
     // Calculate the tile indices in both x and y directions based on the fragment's position
     //gl_FragCoord.x and gl_FragCoord.y: These are built-in variables in GLSL representing the screen-space coordinates of the fragment being processed.
     uint tileXindex = uint(gl_FragCoord.x / float(size));
-    uint tileXindex = uint(gl_FragCoord.x / float(size));
     uint tileYindex = uint(gl_FragCoord.y / float(size));
     bool isSumOfIndicesEven = mod((tileXindex + tileYindex), 2) == 0;
     if (isSumOfIndicesEven)
