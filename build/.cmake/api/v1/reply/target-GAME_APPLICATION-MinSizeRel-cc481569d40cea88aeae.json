@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/bin/GAME_APPLICATION.exe"
+			"path" : "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/bin/MinSizeRel/GAME_APPLICATION.exe"
 		},
 		{
-			"path" : "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/bin/GAME_APPLICATION.pdb"
+			"path" : "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/bin/MinSizeRel/GAME_APPLICATION.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -52,7 +52,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++17"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG -std:c++17"
 				}
 			],
 			"includes" : 
@@ -123,7 +123,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG"
+					"fragment" : "/DWIN32 /D_WINDOWS /W3 /MD /O1 /Ob1 /DNDEBUG"
 				}
 			],
 			"includes" : 
@@ -163,11 +163,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 2,
 			"id" : "glfw::@31bd9730e6b8c71cc656"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "GAME_APPLICATION::@6890427a1f51a3e7e1df",
@@ -176,7 +176,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG",
+				"fragment" : "/DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O1 /Ob1 /DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -185,7 +185,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "vendor\\glfw\\src\\Release\\glfw3.lib",
+				"fragment" : "vendor\\glfw\\src\\MinSizeRel\\glfw3.lib",
 				"role" : "libraries"
 			},
 			{
