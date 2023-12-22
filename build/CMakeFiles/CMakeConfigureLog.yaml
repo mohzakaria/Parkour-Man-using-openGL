@@ -26,8 +26,8 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 12/2/2023 8:32:17 PM.
-      Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Build started 12/21/2023 11:30:05 AM.
+      Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdC.tlog\\".
@@ -38,7 +38,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -46,13 +46,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.53
+      Time Elapsed 00:00:00.93
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -60,7 +60,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/3.28.0-rc2/CompilerIdC/CompilerIdC.exe
+        C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/3.28.0-rc2/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
@@ -80,8 +80,8 @@ events:
       Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
       Copyright (C) Microsoft Corporation. All rights reserved.
       
-      Build started 12/2/2023 8:32:19 PM.
-      Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Build started 12/21/2023 11:30:06 AM.
+      Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdCXX.tlog\\".
@@ -92,7 +92,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -100,13 +100,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\3.28.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.27
+      Time Elapsed 00:00:00.62
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -114,7 +114,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/3.28.0-rc2/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/3.28.0-rc2/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
@@ -125,47 +125,47 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-lgww0t"
-      binary: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-lgww0t"
+      source: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-ucn1za"
+      binary: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-ucn1za"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
     buildResult:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-lgww0t'
+        Change Dir: 'C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-ucn1za'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_20f80.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_ed05f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/2/2023 8:32:21 PM.
-        Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lgww0t\\cmTC_20f80.vcxproj" on node 1 (default targets).
+        Build started 12/21/2023 11:30:07 AM.
+        Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucn1za\\cmTC_ed05f.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_20f80.dir\\Debug\\".
-          Creating directory "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lgww0t\\Debug\\".
-          Creating directory "cmTC_20f80.dir\\Debug\\cmTC_20f80.tlog\\".
+          Creating directory "cmTC_ed05f.dir\\Debug\\".
+          Creating directory "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucn1za\\Debug\\".
+          Creating directory "cmTC_ed05f.dir\\Debug\\cmTC_ed05f.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_20f80.dir\\Debug\\cmTC_20f80.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_ed05f.dir\\Debug\\cmTC_ed05f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_20f80.dir\\Debug\\\\" /Fd"cmTC_20f80.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed05f.dir\\Debug\\\\" /Fd"cmTC_ed05f.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_20f80.dir\\Debug\\\\" /Fd"cmTC_20f80.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed05f.dir\\Debug\\\\" /Fd"cmTC_ed05f.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lgww0t\\Debug\\cmTC_20f80.exe" /INCREMENTAL /ILK:"cmTC_20f80.dir\\Debug\\cmTC_20f80.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-lgww0t/Debug/cmTC_20f80.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-lgww0t/Debug/cmTC_20f80.lib" /MACHINE:X64  /machine:x64 cmTC_20f80.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_20f80.vcxproj -> C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lgww0t\\Debug\\cmTC_20f80.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucn1za\\Debug\\cmTC_ed05f.exe" /INCREMENTAL /ILK:"cmTC_ed05f.dir\\Debug\\cmTC_ed05f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-ucn1za/Debug/cmTC_ed05f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-ucn1za/Debug/cmTC_ed05f.lib" /MACHINE:X64  /machine:x64 cmTC_ed05f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_ed05f.vcxproj -> C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucn1za\\Debug\\cmTC_ed05f.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_20f80.dir\\Debug\\cmTC_20f80.tlog\\unsuccessfulbuild".
-          Touching "cmTC_20f80.dir\\Debug\\cmTC_20f80.tlog\\cmTC_20f80.lastbuildstate".
-        Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lgww0t\\cmTC_20f80.vcxproj" (default targets).
+          Deleting file "cmTC_ed05f.dir\\Debug\\cmTC_ed05f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ed05f.dir\\Debug\\cmTC_ed05f.tlog\\cmTC_ed05f.lastbuildstate".
+        Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ucn1za\\cmTC_ed05f.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.29
+        Time Elapsed 00:00:00.57
         
       exitCode: 0
   -
@@ -177,47 +177,47 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-4and54"
-      binary: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-4and54"
+      source: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-b1arxi"
+      binary: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-b1arxi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
     buildResult:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-4and54'
+        Change Dir: 'C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-b1arxi'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_220af.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_4edc8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/2/2023 8:32:24 PM.
-        Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4and54\\cmTC_220af.vcxproj" on node 1 (default targets).
+        Build started 12/21/2023 11:30:08 AM.
+        Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b1arxi\\cmTC_4edc8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_220af.dir\\Debug\\".
-          Creating directory "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4and54\\Debug\\".
-          Creating directory "cmTC_220af.dir\\Debug\\cmTC_220af.tlog\\".
+          Creating directory "cmTC_4edc8.dir\\Debug\\".
+          Creating directory "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b1arxi\\Debug\\".
+          Creating directory "cmTC_4edc8.dir\\Debug\\cmTC_4edc8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_220af.dir\\Debug\\cmTC_220af.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_4edc8.dir\\Debug\\cmTC_4edc8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_220af.dir\\Debug\\\\" /Fd"cmTC_220af.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4edc8.dir\\Debug\\\\" /Fd"cmTC_4edc8.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_220af.dir\\Debug\\\\" /Fd"cmTC_220af.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4edc8.dir\\Debug\\\\" /Fd"cmTC_4edc8.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4and54\\Debug\\cmTC_220af.exe" /INCREMENTAL /ILK:"cmTC_220af.dir\\Debug\\cmTC_220af.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-4and54/Debug/cmTC_220af.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-4and54/Debug/cmTC_220af.lib" /MACHINE:X64  /machine:x64 cmTC_220af.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_220af.vcxproj -> C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4and54\\Debug\\cmTC_220af.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b1arxi\\Debug\\cmTC_4edc8.exe" /INCREMENTAL /ILK:"cmTC_4edc8.dir\\Debug\\cmTC_4edc8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-b1arxi/Debug/cmTC_4edc8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-b1arxi/Debug/cmTC_4edc8.lib" /MACHINE:X64  /machine:x64 cmTC_4edc8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4edc8.vcxproj -> C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b1arxi\\Debug\\cmTC_4edc8.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_220af.dir\\Debug\\cmTC_220af.tlog\\unsuccessfulbuild".
-          Touching "cmTC_220af.dir\\Debug\\cmTC_220af.tlog\\cmTC_220af.lastbuildstate".
-        Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4and54\\cmTC_220af.vcxproj" (default targets).
+          Deleting file "cmTC_4edc8.dir\\Debug\\cmTC_4edc8.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4edc8.dir\\Debug\\cmTC_4edc8.tlog\\cmTC_4edc8.lastbuildstate".
+        Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b1arxi\\cmTC_4edc8.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.20
+        Time Elapsed 00:00:00.58
         
       exitCode: 0
   -
@@ -231,8 +231,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-v75prq"
-      binary: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-v75prq"
+      source: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-y4o2uh"
+      binary: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-y4o2uh"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_MODULE_PATH: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/vendor/glfw/CMake/modules"
@@ -240,39 +240,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-v75prq'
+        Change Dir: 'C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-y4o2uh'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_b1a3f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_1c72e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/2/2023 8:32:25 PM.
-        Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\cmTC_b1a3f.vcxproj" on node 1 (default targets).
+        Build started 12/21/2023 11:30:09 AM.
+        Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\cmTC_1c72e.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_b1a3f.dir\\Debug\\".
-          Creating directory "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\Debug\\".
-          Creating directory "cmTC_b1a3f.dir\\Debug\\cmTC_b1a3f.tlog\\".
+          Creating directory "cmTC_1c72e.dir\\Debug\\".
+          Creating directory "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\Debug\\".
+          Creating directory "cmTC_1c72e.dir\\Debug\\cmTC_1c72e.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_b1a3f.dir\\Debug\\cmTC_b1a3f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_1c72e.dir\\Debug\\cmTC_1c72e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b1a3f.dir\\Debug\\\\" /Fd"cmTC_b1a3f.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\src.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c72e.dir\\Debug\\\\" /Fd"cmTC_1c72e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\src.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           src.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b1a3f.dir\\Debug\\\\" /Fd"cmTC_b1a3f.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\src.c"
-        C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\cmTC_b1a3f.vcxproj]
-        Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\cmTC_b1a3f.vcxproj" (default targets) -- FAILED.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c72e.dir\\Debug\\\\" /Fd"cmTC_1c72e.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\src.c"
+        C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\cmTC_1c72e.vcxproj]
+        Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\cmTC_1c72e.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\cmTC_b1a3f.vcxproj" (default target) (1) ->
+        "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\cmTC_1c72e.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v75prq\\cmTC_b1a3f.vcxproj]
+          C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\src.c(1,10): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y4o2uh\\cmTC_1c72e.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.70
+        Time Elapsed 00:00:00.39
         
       exitCode: 1
   -
@@ -285,8 +285,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-t3i9kx"
-      binary: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-t3i9kx"
+      source: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-vkkzy2"
+      binary: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-vkkzy2"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_MODULE_PATH: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/vendor/glfw/CMake/modules"
@@ -294,41 +294,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-t3i9kx'
+        Change Dir: 'C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-vkkzy2'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_cc165.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_56df4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/2/2023 8:32:27 PM.
-        Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\cmTC_cc165.vcxproj" on node 1 (default targets).
+        Build started 12/21/2023 11:30:10 AM.
+        Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\cmTC_56df4.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_cc165.dir\\Debug\\".
-          Creating directory "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\Debug\\".
-          Creating directory "cmTC_cc165.dir\\Debug\\cmTC_cc165.tlog\\".
+          Creating directory "cmTC_56df4.dir\\Debug\\".
+          Creating directory "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\Debug\\".
+          Creating directory "cmTC_56df4.dir\\Debug\\cmTC_56df4.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_cc165.dir\\Debug\\cmTC_cc165.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_56df4.dir\\Debug\\cmTC_56df4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cc165.dir\\Debug\\\\" /Fd"cmTC_cc165.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56df4.dir\\Debug\\\\" /Fd"cmTC_56df4.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckFunctionExists.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cc165.dir\\Debug\\\\" /Fd"cmTC_cc165.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_56df4.dir\\Debug\\\\" /Fd"cmTC_56df4.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\Debug\\cmTC_cc165.exe" /INCREMENTAL /ILK:"cmTC_cc165.dir\\Debug\\cmTC_cc165.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-t3i9kx/Debug/cmTC_cc165.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-t3i9kx/Debug/cmTC_cc165.lib" /MACHINE:X64  /machine:x64 cmTC_cc165.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\cmTC_cc165.vcxproj]
-        Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\cmTC_cc165.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\Debug\\cmTC_56df4.exe" /INCREMENTAL /ILK:"cmTC_56df4.dir\\Debug\\cmTC_56df4.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-vkkzy2/Debug/cmTC_56df4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-vkkzy2/Debug/cmTC_56df4.lib" /MACHINE:X64  /machine:x64 cmTC_56df4.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\cmTC_56df4.vcxproj]
+        Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\cmTC_56df4.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\cmTC_cc165.vcxproj" (default target) (1) ->
+        "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\cmTC_56df4.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-t3i9kx\\cmTC_cc165.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vkkzy2\\cmTC_56df4.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.96
+        Time Elapsed 00:00:00.49
         
       exitCode: 1
   -
@@ -341,8 +341,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-m694su"
-      binary: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-m694su"
+      source: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-7wxmzu"
+      binary: "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-7wxmzu"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_MODULE_PATH: "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version/vendor/glfw/CMake/modules"
@@ -350,41 +350,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-m694su'
+        Change Dir: 'C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-7wxmzu'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_7d3b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_03480.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
         Microsoft (R) Build Engine version 16.11.2+f32259642 for .NET Framework
         Copyright (C) Microsoft Corporation. All rights reserved.
         
-        Build started 12/2/2023 8:32:28 PM.
-        Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\cmTC_7d3b9.vcxproj" on node 1 (default targets).
+        Build started 12/21/2023 11:30:11 AM.
+        Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\cmTC_03480.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_7d3b9.dir\\Debug\\".
-          Creating directory "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\Debug\\".
-          Creating directory "cmTC_7d3b9.dir\\Debug\\cmTC_7d3b9.tlog\\".
+          Creating directory "cmTC_03480.dir\\Debug\\".
+          Creating directory "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\Debug\\".
+          Creating directory "cmTC_03480.dir\\Debug\\cmTC_03480.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_7d3b9.dir\\Debug\\cmTC_7d3b9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_03480.dir\\Debug\\cmTC_03480.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7d3b9.dir\\Debug\\\\" /Fd"cmTC_7d3b9.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\CheckFunctionExists.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03480.dir\\Debug\\\\" /Fd"cmTC_03480.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\CheckFunctionExists.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30146 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CheckFunctionExists.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7d3b9.dir\\Debug\\\\" /Fd"cmTC_7d3b9.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_03480.dir\\Debug\\\\" /Fd"cmTC_03480.dir\\Debug\\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\CheckFunctionExists.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\Debug\\cmTC_7d3b9.exe" /INCREMENTAL /ILK:"cmTC_7d3b9.dir\\Debug\\cmTC_7d3b9.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-m694su/Debug/cmTC_7d3b9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/CMakeScratch/TryCompile-m694su/Debug/cmTC_7d3b9.lib" /MACHINE:X64  /machine:x64 cmTC_7d3b9.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\cmTC_7d3b9.vcxproj]
-        Done Building Project "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\cmTC_7d3b9.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\Debug\\cmTC_03480.exe" /INCREMENTAL /ILK:"cmTC_03480.dir\\Debug\\cmTC_03480.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-7wxmzu/Debug/cmTC_03480.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/CMakeScratch/TryCompile-7wxmzu/Debug/cmTC_03480.lib" /MACHINE:X64  /machine:x64 cmTC_03480.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\cmTC_03480.vcxproj]
+        Done Building Project "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\cmTC_03480.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\cmTC_7d3b9.vcxproj" (default target) (1) ->
+        "C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\cmTC_03480.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Momo\\Downloads\\CMPN205 Project - Student Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m694su\\cmTC_7d3b9.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\Momo\\Documents\\GitHub\\CMPN205-Project---Student-Version\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7wxmzu\\cmTC_03480.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:01.07
+        Time Elapsed 00:00:00.50
         
       exitCode: 1
 ...
