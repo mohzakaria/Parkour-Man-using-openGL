@@ -48,6 +48,10 @@ our::Texture2D* our::texture_utils::loadImage(const std::string& filename, bool 
     //Bind the texture such that we upload the image data to its storage
     //TODO: (Req 5) Finish this function to fill the texture with the data found in "pixels"
     texture->bind();//binding texture
+    // GL_RGBA8:Specifies the internal format of the texture. GL_RGBA8 indicates a texture containing RGBA components, each of 8 bits.//
+    //width and height
+    //data type
+    //actual data loaded into texture
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, size.x, size.y, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixels);
     if(generate_mipmap)
     {

@@ -54,7 +54,7 @@
     <ClInclude Include="C:\Users\Momo\Downloads\CMPN205 Project - Student Version\CMPN205 Project - Student Version\vendor\glfw\src\mappings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\vendor\glfw\src\glfw_config.h">
+    <ClInclude Include="C:\Users\Momo\Downloads\CMPN205 Project - Student Version\build\vendor\glfw\src\glfw_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Momo\Downloads\CMPN205 Project - Student Version\CMPN205 Project - Student Version\vendor\glfw\include\GLFW\glfw3.h">
@@ -84,10 +84,10 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{557E51E7-5AAF-372A-B4A6-53FFF67CA287}</UniqueIdentifier>
+      <UniqueIdentifier>{ECD26738-A5AA-3F8C-B768-65F088536E16}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{B185EF4E-486B-3215-A36E-B80F552B19F2}</UniqueIdentifier>
+      <UniqueIdentifier>{8FC20888-A5D6-30D5-8D2D-ED47FEFCAB97}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
