@@ -133,36 +133,63 @@ namespace our
                     break;
                 }
             }
-            position.y = 100;
+
             for (auto entity : world->getEntities())
             {
-                std::cout << "ana hena 1 entity name: " << entity->name << std::endl;
+                // if (entity->getComponent<PlayerComponent>())
+                // {
+                //     std::cout << "ANA PLAYER " << std::endl;
+                // }
+                // else
+                // {
+                //     std::cout << "ANA Mesh Player" << std::endl;
+                // }
 
                 if (entity->getComponent<PlayerComponent>())
                 {
-                    std::cout << "ana hena 2 entity name: " << entity->name << std::endl;
+                    std::cout << "ANA PLAYER CONTINUE " << std::endl;
                     continue;
                 }
-                std::cout << "ana hena 3 entity name: " << entity->name << std::endl;
+                std::cout << "ANA Mesh Player" << std::endl;
+
                 CollisionComponent *tmpcol = entity->getComponent<CollisionComponent>();
                 if (tmpcol)
                 {
-                    std::cout << "ana hena 4 entity name: " << entity->name << std::endl;
-                    if (collision->isColliding(tmpcol->start, tmpcol->end, jake->start, jake->end))
+                    // std::cout << "Collision Component  " << std::endl;
+                    // std::cout << "tmpcol->start.x " << tmpcol->start.x << std::endl;
+                    // std::cout << "tmpcol->start.y " << tmpcol->start.y << std::endl;
+                    // std::cout << "tmpcol->start.z " << tmpcol->start.z << std::endl;
+
+                    // std::cout << "tmpcol->end.x " << tmpcol->end.x << std::endl;
+                    // std::cout << "tmpcol->end.y " << tmpcol->end.y << std::endl;
+                    // std::cout << "tmpcol->end.z " << tmpcol->end.z << std::endl;
+
+                    // std::cout << "jake->start.x " << jake->start.x + position.x << std::endl;
+                    // std::cout << "jake->start.y " << jake->start.y + position.y << std::endl;
+                    // std::cout << "jake->start.z " << jake->start.z + position.z << std::endl;
+
+                    // std::cout << "jake->end.x " << jake->end.x + position.x << std::endl;
+                    // std::cout << "jake->end.y " << jake->end.y + position.y << std::endl;
+                    // std::cout << "jake->end.z " << jake->end.z + position.z << std::endl;
+                    if (collision->isColliding(tmpcol->start, tmpcol->end, jake->start + position, jake->end + position))
                     {
-                        std::cout << "ana hena 5 entity name: " << entity->name << std::endl;
+                        std::cout << "Fee Collision " << std::endl;
+                        for (int i = 0; i < 500; i++)
+                        {
+                            std::cout << "Fee Collision " << std::endl;
+                        }
                         // controller->isJumping = false;
                         // controller->isFalling = true;
-                        position.y = 100;
+                        // position.y = 100;
                     }
                     else
                     {
                         // controller->isFalling = false;
-                        std::cout << "ana hena 6 entity name: " << entity->name << std::endl;
-                        position.y = 100;
+                        std::cout << "Mafeesh Collision " << std::endl;
+                        exit();
                     }
                 }
-                std::cout << "ana hena 7 entity name: " << entity->name << std::endl;
+                // std::cout << "ana hena 7 entity name: " << entity->name << std::endl;
             }
             if (app->getKeyboard().justPressed(GLFW_KEY_SPACE) && !isPlayerJumping && !isPlayerFalling)
             {

@@ -36,10 +36,10 @@ namespace our
         {
             component = entity->addComponent<MeshRendererComponent>();
         }
-        // else if (type == CollisionComponent::getID())
-        // {
-        //     component = entity->addComponent<CollisionComponent>();
-        // }
+        else if (type == CollisionComponent::getID())
+        {
+            component = entity->addComponent<CollisionComponent>();
+        }
         else if (type == PlayerComponent::getID())
         {
             component = entity->addComponent<PlayerComponent>();

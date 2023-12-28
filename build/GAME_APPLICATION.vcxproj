@@ -372,6 +372,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\component-deserializer.hpp" />
     <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.hpp" />
     <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.hpp" />
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.cpp" />
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp" />
     <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.hpp" />
     <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp" />
     <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\free-camera-controller.hpp" />

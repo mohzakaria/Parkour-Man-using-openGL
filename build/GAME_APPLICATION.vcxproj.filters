@@ -52,6 +52,12 @@
     <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
