@@ -1,6 +1,6 @@
-^C:\USERS\MOMO\DOWNLOADS\CMPN205 PROJECT - STUDENT VERSION\CMPN205 PROJECT - STUDENT VERSION\CMAKELISTS.TXT
+^D:\FINALCLONE\CMPN205-PROJECT---STUDENT-VERSION\CMPN205 PROJECT - STUDENT VERSION\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Momo/Downloads/CMPN205 Project - Student Version/CMPN205 Project - Student Version" "-BC:/Users/Momo/Downloads/CMPN205 Project - Student Version/build" --check-stamp-file "C:/Users/Momo/Downloads/CMPN205 Project - Student Version/build/CMakeFiles/generate.stamp"
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BD:/FinalClone/CMPN205-Project---Student-Version/build --check-stamp-file D:/FinalClone/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
