@@ -27,6 +27,7 @@ namespace our
         bool mouse_locked = false; // Is the mouse locked
         bool isColliding = false;
         bool isAboveBlock = false;
+        float endpositiony=0.0f;
         bool isCollidingFront = false;
         bool isCollidingBack = false;
         bool isCollidingLeft = false;
@@ -112,7 +113,9 @@ namespace our
 
             glm::vec3 front = glm::vec3(matrix * glm::vec4(0, 0, -1, 0)),
                       up = glm::vec3(matrix * glm::vec4(0, 26, 0, 0)),
-                      right = glm::vec3(matrix * glm::vec4(1, 0, 0, 0));
+                      right = glm::vec3(matrix * glm::vec4(1, 0, 0, 0)),
+                      forward=glm::vec3(matrix * glm::vec4(0, 0, -3, 0));
+
 
             glm::vec3 current_sensitivity = controller->positionSensitivity;
             glm::vec3 down = glm::vec3(matrix * glm::vec4(0, -1, 0, 0)); // -1.0f MESH -2.0f
@@ -155,26 +158,31 @@ namespace our
                 }
                 std::cout << "ANA Mesh Player" << std::endl;
                 glm::vec3 jakeAbsPosition = position + glm::vec3(0.0f, -1.0f, -1.1f);
-                std::cout << "jakeAbsPosition:   " << jakeAbsPosition.x << "    " << jakeAbsPosition.y << "  " << jakeAbsPosition.z << std::endl;
+                std::cout << "jakeAbsPosition:   " << (jakeAbsPosition.x) << "    " << (jakeAbsPosition.y) << "  " << abs(jakeAbsPosition.z) << std::endl;
                 CollisionComponent *tmpcol = entity->getComponent<CollisionComponent>();
                 if (tmpcol)
                 {
-
-                    isColliding = tmpcol->isColliding(tmpcol->start, tmpcol->end, jake->start + position, jake->end + position);
+                    std::cout << "tmpcol->start: " << (tmpcol->start.x)<<" "<<(tmpcol->start.y)<<" "<<abs(tmpcol->start.z) << std::endl;
+                    std::cout << "tmpcol->end: " << (tmpcol->end.x) <<" "<< (tmpcol->end.y)<<" "<<abs(tmpcol->end.z)<<std::endl;
+                    isColliding = tmpcol->isColliding((tmpcol->start), (tmpcol->end), (jake->start + position), (jake->end + position));
                     if (isColliding)
                     {
-                        // std::cout << "fee Collision " << std::endl;
-                        // std::cout << "jakeAbsPosition.z: " << jakeAbsPosition.z << std::endl;
-                        // std::cout << "jake bounding box:" << (jake->start + position).z << std::endl;
-                        // std::cout << "jake bounding box:" << (jake->end + position).z << std::endl;
-                        // std::cout << "tmpcol->start.z: " << tmpcol->start.z << std::endl;
-                        // std::cout << "tmpcol->end.z: " << tmpcol->end.z << std::endl;
-                        isAboveBlock = jakeAbsPosition.y > tmpcol->start.y;
-                        isCollidingFront = jakeAbsPosition.z >= tmpcol->start.z;
-                        isCollidingBack = jakeAbsPosition.z <= tmpcol->end.z; // momken te3mel moshkela
-                        isCollidingLeft = jakeAbsPosition.x >= tmpcol->end.x;
-                        isCollidingRight = jakeAbsPosition.x <= tmpcol->start.x;
+                        std::cout << "fee Collision " << std::endl;
+                        isAboveBlock = jakeAbsPosition.y > tmpcol->end.y;
+                        std::cout<<"isAboveBlock = "<<isAboveBlock<<std::endl;
+                        if(!isAboveBlock)
+                        {
+                            isCollidingFront = abs(jakeAbsPosition.z) >= abs(tmpcol->start.z) && abs(jakeAbsPosition.z) < abs(tmpcol->start.z)+0.1;
+                            std::cout<<"isCollidingFront = "<<isCollidingFront<<std::endl;
+                            isCollidingBack = abs(jakeAbsPosition.z) <= abs(tmpcol->end.z) && abs(jakeAbsPosition.z) > abs(tmpcol->end.z)-0.1;
+                            std::cout<<"isCollidingBack = "<<isCollidingBack<<std::endl;
+                            isCollidingLeft = jakeAbsPosition.x >= tmpcol->end.x;
+                            std::cout<<"isCollidingLeft = "<<isCollidingLeft<<std::endl;
+                            isCollidingRight = jakeAbsPosition.x <= tmpcol->start.x;
+                            std::cout<<"isCollidingRight = "<<isCollidingRight<<std::endl;
+                        }
                         isBelowBlock = jakeAbsPosition.y <= tmpcol->start.y;
+                        std::cout<<"isBelowBlock = "<<isBelowBlock<<std::endl;
                     }
                     else
                     {
@@ -184,7 +192,6 @@ namespace our
                         isCollidingLeft = false;
                         isCollidingRight = false;
                         isBelowBlock = false;
-                        // controller->isFalling = false;
                         std::cout << "Mafeesh Collision " << std::endl;
                     }
                 }
@@ -193,16 +200,17 @@ namespace our
             if (app->getKeyboard().justPressed(GLFW_KEY_SPACE) && !isPlayerJumping && !isPlayerFalling)
             {
                 controller->isJumping = true;
-                if (!isPlayerFalling && !isPlayerJumping)
+                if (!isPlayerFalling )
                 {
                     controller->position = position;
                 }
             }
             if (isPlayerJumping)
             {
-                if (position.y <= (controller->position).y + 3.0f && !isBelowBlock)
+                if (position.y <= (controller->position).y + 3.0f && (!isBelowBlock))
                 {
                     position += up * (deltaTime * current_sensitivity.y * 0.1f);
+                    //position += forward * (deltaTime * current_sensitivity.z * 0.1f);
                 }
                 else
                 {
@@ -213,7 +221,7 @@ namespace our
             if (isPlayerFalling)
             {
 
-                if (position.y >= 0.0f && !isAboveBlock )
+                if (position.y >= 0.0f && (!isAboveBlock))
                 {
                     position += down * (deltaTime * current_sensitivity.y);
                 }
@@ -222,8 +230,9 @@ namespace our
                     controller->isFalling = false;
                 }
             }
-            if(!isAboveBlock ){
-                isPlayerFalling = true;
+            if(!isAboveBlock && !isPlayerJumping && !isPlayerFalling)
+            {
+                controller->isFalling = true;
             }
             
         }
