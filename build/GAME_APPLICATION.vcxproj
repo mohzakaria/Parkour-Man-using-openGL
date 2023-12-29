@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
   </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -22,10 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{24F23FC8-7DB1-3874-912C-2AABD0A4D616}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{C003400D-1821-3EA2-B47B-1770F2CD4D5A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <Platform>x64</Platform>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>GAME_APPLICATION</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -34,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -60,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GAME_APPLICATION.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GAME_APPLICATION.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GAME_APPLICATION.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GAME_APPLICATION.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GAME_APPLICATION</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
@@ -87,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -105,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -121,8 +120,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FinalClone/CMPN205-Project---Student-Version/build/Debug/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/Debug/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -131,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -149,10 +148,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -165,8 +164,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FinalClone/CMPN205-Project---Student-Version/build/Release/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/Release/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -175,7 +174,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -193,10 +192,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -209,8 +208,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FinalClone/CMPN205-Project---Student-Version/build/MinSizeRel/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/MinSizeRel/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/MinSizeRel/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/MinSizeRel/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -219,7 +218,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -236,10 +235,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glfw\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\include;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glm;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\utils;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -252,8 +251,8 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FinalClone/CMPN205-Project---Student-Version/build/RelWithDebInfo/GAME_APPLICATION.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/RelWithDebInfo/GAME_APPLICATION.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/RelWithDebInfo/GAME_APPLICATION.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/bin/RelWithDebInfo/GAME_APPLICATION.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -261,11 +260,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BD:/FinalClone/CMPN205-Project---Student-Version/build --check-stamp-file D:/FinalClone/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build --check-stamp-file C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -273,12 +272,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCXXCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeRCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeRCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BD:/FinalClone/CMPN205-Project---Student-Version/build --check-stamp-file D:/FinalClone/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build --check-stamp-file C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -286,12 +285,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCXXCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeRCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeRCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BD:/FinalClone/CMPN205-Project---Student-Version/build --check-stamp-file D:/FinalClone/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build --check-stamp-file C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -299,12 +298,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCXXCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeRCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeRCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BD:/FinalClone/CMPN205-Project---Student-Version/build --check-stamp-file D:/FinalClone/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version" -BC:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build --check-stamp-file C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -312,89 +311,89 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeCXXCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeRCCompiler.cmake;D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\3.22.22040401-MSVC_2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FinalClone\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeCXXCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeRCCompiler.cmake;C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\3.28.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\main.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\play-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\menu-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\shader-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\mesh-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\transform-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\pipeline-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\texture-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\sampler-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\material-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\entity-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\renderer-test-state.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\keyboard.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\mouse.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\deserialize-utils.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\vertex.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture2d.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\component.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\component-deserializer.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.cpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\free-camera-controller.hpp" />
-    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\movement.hpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\src\gl.c" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui.cpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_demo.cpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_draw.cpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp" />
-    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\main.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\play-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\menu-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\shader-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\mesh-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\transform-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\pipeline-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\texture-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\sampler-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\material-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\entity-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\renderer-test-state.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\keyboard.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\mouse.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\deserialize-utils.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\vertex.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture2d.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\component.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\component-deserializer.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\free-camera-controller.hpp" />
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\movement.hpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\src\gl.c" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp" />
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\FinalClone\CMPN205-Project---Student-Version\build\ZERO_CHECK.vcxproj">
-      <Project>{24C71B30-65E3-30D5-911F-5BDECAD0C025}</Project>
+    <ProjectReference Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\ZERO_CHECK.vcxproj">
+      <Project>{C2DA1BF3-7782-3F10-9920-DBB138804400}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\FinalClone\CMPN205-Project---Student-Version\build\vendor\glfw\src\glfw.vcxproj">
-      <Project>{010300A6-0422-3BEE-BD6C-9F385C3BBF59}</Project>
+    <ProjectReference Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\build\vendor\glfw\src\glfw.vcxproj">
+      <Project>{433033E9-8974-34A3-A0E7-D4453EEFE396}</Project>
       <Name>glfw</Name>
     </ProjectReference>
   </ItemGroup>

@@ -25,6 +25,13 @@ namespace our
     {
         Application *app;          // The application in which the state runs
         bool mouse_locked = false; // Is the mouse locked
+        bool isColliding = false;
+        bool isAboveBlock = false;
+        bool isCollidingFront = false;
+        bool isCollidingBack = false;
+        bool isCollidingLeft = false;
+        bool isCollidingRight = false;
+        bool isBelowBlock = false;
 
     public:
         // When a state enters, it should call this function and give it the pointer to the application
@@ -42,8 +49,6 @@ namespace our
             FreeCameraControllerComponent *controller = nullptr;
             CollisionSystem *collision = nullptr;
             PlayerComponent *player = nullptr;
-            // PlayerComponent *player = nullptr;
-            // MovementComponent *movement =nullptr;
 
             for (auto entity : world->getEntities())
             {
@@ -117,10 +122,15 @@ namespace our
 
             // We change the camera position based on the keys WASD/QE
             // S & W moves the player back and forth
-            if (app->getKeyboard().isPressed(GLFW_KEY_UP))
+            if (app->getKeyboard().isPressed(GLFW_KEY_UP) && !isCollidingFront)
                 position += front * (deltaTime * current_sensitivity.z);
-            if (app->getKeyboard().isPressed(GLFW_KEY_DOWN))
+            if (app->getKeyboard().isPressed(GLFW_KEY_DOWN) && !isCollidingBack)
                 position -= front * (deltaTime * current_sensitivity.z);
+                // A & D moves the player left or right
+            if (app->getKeyboard().isPressed(GLFW_KEY_RIGHT) && !isCollidingRight)
+                position += right * (deltaTime * current_sensitivity.x);
+            if (app->getKeyboard().isPressed(GLFW_KEY_LEFT)  && !isCollidingLeft)
+                position -= right * (deltaTime * current_sensitivity.x);
             // Q & E moves the player up and down
             // AAO
             CollisionComponent *jake = nullptr;
@@ -136,57 +146,46 @@ namespace our
 
             for (auto entity : world->getEntities())
             {
-                // if (entity->getComponent<PlayerComponent>())
-                // {
-                //     std::cout << "ANA PLAYER " << std::endl;
-                // }
-                // else
-                // {
-                //     std::cout << "ANA Mesh Player" << std::endl;
-                // }
 
-                if (entity->getComponent<PlayerComponent>())
+                PlayerComponent *player = entity->getComponent<PlayerComponent>();
+                if (player)
                 {
                     std::cout << "ANA PLAYER CONTINUE " << std::endl;
                     continue;
                 }
                 std::cout << "ANA Mesh Player" << std::endl;
-
+                glm::vec3 jakeAbsPosition = position + glm::vec3(0.0f, -1.0f, -1.1f);
+                std::cout << "jakeAbsPosition:   " << jakeAbsPosition.x << "    " << jakeAbsPosition.y << "  " << jakeAbsPosition.z << std::endl;
                 CollisionComponent *tmpcol = entity->getComponent<CollisionComponent>();
                 if (tmpcol)
                 {
-                    // std::cout << "Collision Component  " << std::endl;
-                    // std::cout << "tmpcol->start.x " << tmpcol->start.x << std::endl;
-                    // std::cout << "tmpcol->start.y " << tmpcol->start.y << std::endl;
-                    // std::cout << "tmpcol->start.z " << tmpcol->start.z << std::endl;
 
-                    // std::cout << "tmpcol->end.x " << tmpcol->end.x << std::endl;
-                    // std::cout << "tmpcol->end.y " << tmpcol->end.y << std::endl;
-                    // std::cout << "tmpcol->end.z " << tmpcol->end.z << std::endl;
-
-                    // std::cout << "jake->start.x " << jake->start.x + position.x << std::endl;
-                    // std::cout << "jake->start.y " << jake->start.y + position.y << std::endl;
-                    // std::cout << "jake->start.z " << jake->start.z + position.z << std::endl;
-
-                    // std::cout << "jake->end.x " << jake->end.x + position.x << std::endl;
-                    // std::cout << "jake->end.y " << jake->end.y + position.y << std::endl;
-                    // std::cout << "jake->end.z " << jake->end.z + position.z << std::endl;
-                    if (collision->isColliding(tmpcol->start, tmpcol->end, jake->start + position, jake->end + position))
+                    isColliding = tmpcol->isColliding(tmpcol->start, tmpcol->end, jake->start + position, jake->end + position);
+                    if (isColliding)
                     {
-                        std::cout << "Fee Collision " << std::endl;
-                        for (int i = 0; i < 500; i++)
-                        {
-                            std::cout << "Fee Collision " << std::endl;
-                        }
-                        // controller->isJumping = false;
-                        // controller->isFalling = true;
-                        // position.y = 100;
+                        // std::cout << "fee Collision " << std::endl;
+                        // std::cout << "jakeAbsPosition.z: " << jakeAbsPosition.z << std::endl;
+                        // std::cout << "jake bounding box:" << (jake->start + position).z << std::endl;
+                        // std::cout << "jake bounding box:" << (jake->end + position).z << std::endl;
+                        // std::cout << "tmpcol->start.z: " << tmpcol->start.z << std::endl;
+                        // std::cout << "tmpcol->end.z: " << tmpcol->end.z << std::endl;
+                        isAboveBlock = jakeAbsPosition.y > tmpcol->start.y;
+                        isCollidingFront = jakeAbsPosition.z >= tmpcol->start.z;
+                        isCollidingBack = jakeAbsPosition.z <= tmpcol->end.z; // momken te3mel moshkela
+                        isCollidingLeft = jakeAbsPosition.x >= tmpcol->end.x;
+                        isCollidingRight = jakeAbsPosition.x <= tmpcol->start.x;
+                        isBelowBlock = jakeAbsPosition.y <= tmpcol->start.y;
                     }
                     else
                     {
+                        isAboveBlock = false;
+                        isCollidingFront = false;
+                        isCollidingBack = false;
+                        isCollidingLeft = false;
+                        isCollidingRight = false;
+                        isBelowBlock = false;
                         // controller->isFalling = false;
                         std::cout << "Mafeesh Collision " << std::endl;
-                        exit();
                     }
                 }
                 // std::cout << "ana hena 7 entity name: " << entity->name << std::endl;
@@ -201,7 +200,7 @@ namespace our
             }
             if (isPlayerJumping)
             {
-                if (position.y <= (controller->position).y + 3.0f)
+                if (position.y <= (controller->position).y + 3.0f && !isBelowBlock)
                 {
                     position += up * (deltaTime * current_sensitivity.y * 0.1f);
                 }
@@ -213,7 +212,8 @@ namespace our
             }
             if (isPlayerFalling)
             {
-                if (position.y >= 0.0f)
+
+                if (position.y >= 0.0f && !isAboveBlock )
                 {
                     position += down * (deltaTime * current_sensitivity.y);
                 }
@@ -222,11 +222,10 @@ namespace our
                     controller->isFalling = false;
                 }
             }
-            // A & D moves the player left or right
-            if (app->getKeyboard().isPressed(GLFW_KEY_RIGHT))
-                position += right * (deltaTime * current_sensitivity.x);
-            if (app->getKeyboard().isPressed(GLFW_KEY_LEFT))
-                position -= right * (deltaTime * current_sensitivity.x);
+            if(!isAboveBlock ){
+                isPlayerFalling = true;
+            }
+            
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked

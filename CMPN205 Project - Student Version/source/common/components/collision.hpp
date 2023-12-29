@@ -21,6 +21,19 @@ namespace our
 
         // Reads linearVelocity & angularVelocity from the given json object
         void deserialize(const nlohmann::json &data) override;
+        bool isColliding(glm::vec3 startA, glm::vec3 endA, glm::vec3 startB, glm::vec3 endB)
+        {
+            if (startA.x <= endB.x &&
+                endA.x >= startB.x &&
+                startA.y <= endB.y &&
+                endA.y >= startB.y &&
+                startA.z <= endB.z &&
+                endA.z >= startB.z)
+            {
+                return true;
+            }
+            return false;
+        }
     };
 
 }
