@@ -1,10 +1,14 @@
 #pragma once
-
+#include <iostream>
 #include "../ecs/world.hpp"
 #include "../components/camera.hpp"
 #include "../components/free-camera-controller.hpp"
 
 #include "../application.hpp"
+// #include "../components/player.hpp"
+#include "../components/movement.hpp"
+#include "../systems/collision.hpp"
+#include "../components/player.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/constants.hpp>
@@ -15,61 +19,82 @@ namespace our
 {
 
     // The free camera controller system is responsible for moving every entity which contains a FreeCameraControllerComponent.
-    // This system is added as a slightly complex example for how use the ECS framework to implement logic. 
+    // This system is added as a slightly complex example for how use the ECS framework to implement logic.
     // For more information, see "common/components/free-camera-controller.hpp"
-    class FreeCameraControllerSystem {
-        Application* app; // The application in which the state runs
+    class FreeCameraControllerSystem
+    {
+        Application *app;          // The application in which the state runs
         bool mouse_locked = false; // Is the mouse locked
 
     public:
         // When a state enters, it should call this function and give it the pointer to the application
-        void enter(Application* app){
+        void enter(Application *app)
+        {
             this->app = app;
         }
 
-        // This should be called every frame to update all entities containing a FreeCameraControllerComponent 
-        void update(World* world, float deltaTime) {
+        // This should be called every frame to update all entities containing a FreeCameraControllerComponent
+        void update(World *world, float deltaTime)
+        {
             // First of all, we search for an entity containing both a CameraComponent and a FreeCameraControllerComponent
             // As soon as we find one, we break
-            CameraComponent* camera = nullptr;
+            CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
-            for(auto entity : world->getEntities()){
+            CollisionSystem *collision = nullptr;
+            PlayerComponent *player = nullptr;
+            // PlayerComponent *player = nullptr;
+            // MovementComponent *movement =nullptr;
+
+            for (auto entity : world->getEntities())
+            {
                 camera = entity->getComponent<CameraComponent>();
                 controller = entity->getComponent<FreeCameraControllerComponent>();
-                if(camera && controller) break;
+                // player = entity->getComponent<PlayerComponent>(); // create player component
+                // movement = entity->getComponent<MovementComponent>();
+                if (camera && controller)
+                    break;
             }
             // If there is no entity with both a CameraComponent and a FreeCameraControllerComponent, we can do nothing so we return
-            if(!(camera && controller)) return;
+            if (!(camera && controller))
+                return;
             // Get the entity that we found via getOwner of camera (we could use controller->getOwner())
-            Entity* entity = camera->getOwner();
+            Entity *entity = camera->getOwner();
 
             // If the left mouse button is pressed, we lock and hide the mouse. This common in First Person Games.
-            if(app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked){
+            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && !mouse_locked)
+            {
                 app->getMouse().lockMouse(app->getWindow());
                 mouse_locked = true;
-            // If the left mouse button is released, we unlock and unhide the mouse.
-            } else if(!app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && mouse_locked) {
+                // If the left mouse button is released, we unlock and unhide the mouse.
+            }
+            else if (!app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1) && mouse_locked)
+            {
                 app->getMouse().unlockMouse(app->getWindow());
                 mouse_locked = false;
             }
 
             // We get a reference to the entity's position and rotation
-            glm::vec3& position = entity->localTransform.position;
-            glm::vec3& rotation = entity->localTransform.rotation;
+            glm::vec3 &position = entity->localTransform.position;
+            glm::vec3 &rotation = entity->localTransform.rotation;
+            bool isPlayerJumping = controller->isJumping;
+            bool isPlayerFalling = controller->isFalling; // AAO
 
             // If the left mouse button is pressed, we get the change in the mouse location
             // and use it to update the camera rotation
-            if(app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1)){
+            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1))
+            {
                 glm::vec2 delta = app->getMouse().getMouseDelta();
-                rotation.x -= delta.y * controller->rotationSensitivity; // The y-axis controls the pitch
+                // rotation.x -= delta.y * controller->rotationSensitivity; // The y-axis controls the pitch
                 rotation.y -= delta.x * controller->rotationSensitivity; // The x-axis controls the yaw
             }
 
             // We prevent the pitch from exceeding a certain angle from the XZ plane to prevent gimbal locks
-            if(rotation.x < -glm::half_pi<float>() * 0.99f) rotation.x = -glm::half_pi<float>() * 0.99f;
-            if(rotation.x >  glm::half_pi<float>() * 0.99f) rotation.x  = glm::half_pi<float>() * 0.99f;
+            if (rotation.x < -glm::half_pi<float>() * 0.99f)
+                rotation.x = -glm::half_pi<float>() * 0.99f;
+            if (rotation.x > glm::half_pi<float>() * 0.99f)
+                rotation.x = glm::half_pi<float>() * 0.99f;
             // This is not necessary, but whenever the rotation goes outside the 0 to 2*PI range, we wrap it back inside.
-            // This could prevent floating point error if the player rotates in single direction for an extremely long time. 
+            // This could prevent floating point error if the player rotates in single direction for an extremely long time.
             rotation.y = glm::wrapAngle(rotation.y);
 
             // We update the camera fov based on the mouse wheel scrolling amount
@@ -81,33 +106,138 @@ namespace our
             glm::mat4 matrix = entity->localTransform.toMat4();
 
             glm::vec3 front = glm::vec3(matrix * glm::vec4(0, 0, -1, 0)),
-                      up = glm::vec3(matrix * glm::vec4(0, 1, 0, 0)), 
+                      up = glm::vec3(matrix * glm::vec4(0, 26, 0, 0)),
                       right = glm::vec3(matrix * glm::vec4(1, 0, 0, 0));
 
             glm::vec3 current_sensitivity = controller->positionSensitivity;
+            glm::vec3 down = glm::vec3(matrix * glm::vec4(0, -1, 0, 0)); // -1.0f MESH -2.0f
             // If the LEFT SHIFT key is pressed, we multiply the position sensitivity by the speed up factor
-            if(app->getKeyboard().isPressed(GLFW_KEY_LEFT_SHIFT)) current_sensitivity *= controller->speedupFactor;
+            if (app->getKeyboard().isPressed(GLFW_KEY_LEFT_SHIFT))
+                current_sensitivity *= controller->speedupFactor;
 
             // We change the camera position based on the keys WASD/QE
             // S & W moves the player back and forth
-            if(app->getKeyboard().isPressed(GLFW_KEY_W)) position += front * (deltaTime * current_sensitivity.z);
-            if(app->getKeyboard().isPressed(GLFW_KEY_S)) position -= front * (deltaTime * current_sensitivity.z);
+            if (app->getKeyboard().isPressed(GLFW_KEY_UP))
+                position += front * (deltaTime * current_sensitivity.z);
+            if (app->getKeyboard().isPressed(GLFW_KEY_DOWN))
+                position -= front * (deltaTime * current_sensitivity.z);
             // Q & E moves the player up and down
-            if(app->getKeyboard().isPressed(GLFW_KEY_Q)) position += up * (deltaTime * current_sensitivity.y);
-            if(app->getKeyboard().isPressed(GLFW_KEY_E)) position -= up * (deltaTime * current_sensitivity.y);
-            // A & D moves the player left or right 
-            if(app->getKeyboard().isPressed(GLFW_KEY_D)) position += right * (deltaTime * current_sensitivity.x);
-            if(app->getKeyboard().isPressed(GLFW_KEY_A)) position -= right * (deltaTime * current_sensitivity.x);
+            // AAO
+            CollisionComponent *jake = nullptr;
+            for (auto entity : world->getEntities())
+            {
+                if (entity->getComponent<PlayerComponent>())
+                {
+                    player = entity->getComponent<PlayerComponent>();
+                    jake = entity->getComponent<CollisionComponent>();
+                    break;
+                }
+            }
+
+            for (auto entity : world->getEntities())
+            {
+                // if (entity->getComponent<PlayerComponent>())
+                // {
+                //     std::cout << "ANA PLAYER " << std::endl;
+                // }
+                // else
+                // {
+                //     std::cout << "ANA Mesh Player" << std::endl;
+                // }
+
+                if (entity->getComponent<PlayerComponent>())
+                {
+                    std::cout << "ANA PLAYER CONTINUE " << std::endl;
+                    continue;
+                }
+                std::cout << "ANA Mesh Player" << std::endl;
+
+                CollisionComponent *tmpcol = entity->getComponent<CollisionComponent>();
+                if (tmpcol)
+                {
+                    // std::cout << "Collision Component  " << std::endl;
+                    // std::cout << "tmpcol->start.x " << tmpcol->start.x << std::endl;
+                    // std::cout << "tmpcol->start.y " << tmpcol->start.y << std::endl;
+                    // std::cout << "tmpcol->start.z " << tmpcol->start.z << std::endl;
+
+                    // std::cout << "tmpcol->end.x " << tmpcol->end.x << std::endl;
+                    // std::cout << "tmpcol->end.y " << tmpcol->end.y << std::endl;
+                    // std::cout << "tmpcol->end.z " << tmpcol->end.z << std::endl;
+
+                    // std::cout << "jake->start.x " << jake->start.x + position.x << std::endl;
+                    // std::cout << "jake->start.y " << jake->start.y + position.y << std::endl;
+                    // std::cout << "jake->start.z " << jake->start.z + position.z << std::endl;
+
+                    // std::cout << "jake->end.x " << jake->end.x + position.x << std::endl;
+                    // std::cout << "jake->end.y " << jake->end.y + position.y << std::endl;
+                    // std::cout << "jake->end.z " << jake->end.z + position.z << std::endl;
+                    if (collision->isColliding(tmpcol->start, tmpcol->end, jake->start + position, jake->end + position))
+                    {
+                        std::cout << "Fee Collision " << std::endl;
+                        for (int i = 0; i < 500; i++)
+                        {
+                            std::cout << "Fee Collision " << std::endl;
+                        }
+                        // controller->isJumping = false;
+                        // controller->isFalling = true;
+                        // position.y = 100;
+                    }
+                    else
+                    {
+                        // controller->isFalling = false;
+                        std::cout << "Mafeesh Collision " << std::endl;
+                        exit();
+                    }
+                }
+                // std::cout << "ana hena 7 entity name: " << entity->name << std::endl;
+            }
+            if (app->getKeyboard().justPressed(GLFW_KEY_SPACE) && !isPlayerJumping && !isPlayerFalling)
+            {
+                controller->isJumping = true;
+                if (!isPlayerFalling && !isPlayerJumping)
+                {
+                    controller->position = position;
+                }
+            }
+            if (isPlayerJumping)
+            {
+                if (position.y <= (controller->position).y + 3.0f)
+                {
+                    position += up * (deltaTime * current_sensitivity.y * 0.1f);
+                }
+                else
+                {
+                    controller->isJumping = false;
+                    controller->isFalling = true;
+                }
+            }
+            if (isPlayerFalling)
+            {
+                if (position.y >= 0.0f)
+                {
+                    position += down * (deltaTime * current_sensitivity.y);
+                }
+                else
+                {
+                    controller->isFalling = false;
+                }
+            }
+            // A & D moves the player left or right
+            if (app->getKeyboard().isPressed(GLFW_KEY_RIGHT))
+                position += right * (deltaTime * current_sensitivity.x);
+            if (app->getKeyboard().isPressed(GLFW_KEY_LEFT))
+                position -= right * (deltaTime * current_sensitivity.x);
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked
-        void exit(){
-            if(mouse_locked) {
+        void exit()
+        {
+            if (mouse_locked)
+            {
                 mouse_locked = false;
                 app->getMouse().unlockMouse(app->getWindow());
             }
         }
-
     };
 
 }

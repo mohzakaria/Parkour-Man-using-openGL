@@ -226,15 +226,16 @@ namespace our
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
         // TODO: (Req 9) Draw all the opaque commands
         //  Don't forget to set the "transform" uniform to be equal the model-view-projection matrix for each render command
+       
         for (auto command : opaqueCommands)
         {
             // Calculate the model-view-projection matrix
             glm::mat4 modelViewProjection = VP * command.localToWorld;
-             command.material->setup();
+            command.material->setup();
             command.material->shader->set("transform", modelViewProjection);
-
-            // Perform the actual drawing
             command.mesh->draw();
+            // Perform the actual drawing
+           
         }
 
         // If there is a sky material, draw the sky
