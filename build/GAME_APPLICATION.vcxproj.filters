@@ -1,219 +1,219 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\main.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\src\gl.c">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\glad\src\gl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_demo.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_draw.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_widgets.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_glfw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp">
+    <ClCompile Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\vendor\imgui\imgui_impl\imgui_impl_opengl3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\play-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\play-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\menu-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\menu-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\shader-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\shader-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\mesh-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\mesh-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\transform-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\transform-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\pipeline-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\pipeline-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\texture-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\texture-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\sampler-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\sampler-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\material-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\material-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\entity-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\entity-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\renderer-test-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\states\renderer-test-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\application.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\keyboard.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\keyboard.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\mouse.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\input\mouse.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\asset-loader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\deserialize-utils.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\deserialize-utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\shader\shader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\vertex.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\vertex.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\mesh\mesh-utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\sampler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture2d.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture2d.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\texture-utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\texture\screenshot.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\pipeline-state.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\material\material.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\component.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\component.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\transform.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\entity.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\ecs\world.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\camera.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\mesh-renderer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\free-camera-controller.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\movement.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\component-deserializer.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\component-deserializer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\free-camera-controller.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\free-camera-controller.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\movement.hpp">
+    <ClInclude Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\movement.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\CMakeLists.txt" />
+    <CustomBuild Include="D:\FinalClone\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{557E51E7-5AAF-372A-B4A6-53FFF67CA287}</UniqueIdentifier>
+      <UniqueIdentifier>{C5F9A4E4-8BA6-311A-91D8-6FB65332295A}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{B185EF4E-486B-3215-A36E-B80F552B19F2}</UniqueIdentifier>
+      <UniqueIdentifier>{124CB3E9-1827-34C0-A041-DC9B07490F35}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

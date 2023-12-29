@@ -180,7 +180,103 @@
         ]
       },
       {
-        "position": [0, 0, 0],
+        "position": [1, 0, -13],
+        "scale": [0.5, 0.5, 0.5],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "block",
+            "material": "dirt"
+          },
+          {
+            "type": "Collision",
+            "start": [0.995, -0.5, -12.3],
+            "end": [1.05, 0.5, -13.7]
+          }
+        ]
+      },
+      {
+        "position": [0, 0, -15],
+        "scale": [0.5, 0.5, 0.5],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "block",
+            "material": "dirt"
+          },
+          {
+            "type": "Collision",
+            "start": [-0.05, -0.5, -14.3],
+            "end": [0.05, 0.5, -15.7]
+          }
+        ]
+      }, //Left Bound
+      {
+        "position": [-10, -1, -10],
+        "scale": [0.5, 3, 10],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "block",
+            "material": "dirt"
+          },
+          {
+            "type": "Collision",
+            "start": [-10.05, -2, 0],
+            "end": [-9.95, 5, -25]
+          }
+        ]
+      }, //Right
+      {
+        "position": [10, -1, -10],
+        "scale": [0.5, 3, 10],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "block",
+            "material": "dirt"
+          },
+          {
+            "type": "Collision",
+            "start": [9.95, -2, 0],
+            "end": [10.05, 5, -25]
+          }
+        ]
+      }, //Forward
+      {
+        "position": [0, -1, -20],
+        "scale": [10, 3, 0.5],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "block",
+            "material": "dirt"
+          },
+          {
+            "type": "Collision",
+            "start": [-20, -2, -19.3],
+            "end": [20, 5, -20.7]
+          }
+        ]
+      }, //Backward
+      {
+        "position": [0, -1, -1],
+        "scale": [10, 3, 0.5],
+        "components": [
+          {
+            "type": "Mesh Renderer",
+            "mesh": "block",
+            "material": "dirt"
+          },
+          {
+            "type": "Collision",
+            "start": [-10, -2, -0.3],
+            "end": [10, 5, -1.7]
+          }
+        ]
+      },
+      {
+        "position": [0, 0, -1],
         "components": [
           {
             "type": "Camera"
@@ -227,32 +323,7 @@
             "material": "grass"
           }
         ]
-      },
-      {
-        "position": [0, -1, -30],
-        "rotation": [-90, 0, 0],
-        "scale": [10, 10, 1],
-        "components": [
-          {
-            "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "grass"
-          }
-        ]
-      },
-      {
-        "position": [0, -1, -50],
-        "rotation": [-90, 0, 0],
-        "scale": [10, 10, 1],
-        "components": [
-          {
-            "type": "Mesh Renderer",
-            "mesh": "plane",
-            "material": "grass"
-          }
-        ]
       }
-
     ]
   }
 }

@@ -27,12 +27,13 @@ namespace our
         bool mouse_locked = false; // Is the mouse locked
         bool isColliding = false;
         bool isAboveBlock = false;
-        float endpositiony=0.0f;
+        float endpositiony = 0.0f;
         bool isCollidingFront = false;
         bool isCollidingBack = false;
         bool isCollidingLeft = false;
         bool isCollidingRight = false;
         bool isBelowBlock = false;
+        CollisionComponent *tmpi = nullptr;
 
     public:
         // When a state enters, it should call this function and give it the pointer to the application
@@ -48,7 +49,7 @@ namespace our
             // As soon as we find one, we break
             CameraComponent *camera = nullptr;
             FreeCameraControllerComponent *controller = nullptr;
-            CollisionSystem *collision = nullptr;
+            // CollisionSystem *collision = nullptr;
             PlayerComponent *player = nullptr;
 
             for (auto entity : world->getEntities())
@@ -87,12 +88,12 @@ namespace our
 
             // If the left mouse button is pressed, we get the change in the mouse location
             // and use it to update the camera rotation
-            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1))
-            {
-                glm::vec2 delta = app->getMouse().getMouseDelta();
-                // rotation.x -= delta.y * controller->rotationSensitivity; // The y-axis controls the pitch
-                rotation.y -= delta.x * controller->rotationSensitivity; // The x-axis controls the yaw
-            }
+            // if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1))
+            // {
+            //     glm::vec2 delta = app->getMouse().getMouseDelta();
+            //     // rotation.x -= delta.y * controller->rotationSensitivity; // The y-axis controls the pitch
+            //     rotation.y -= delta.x * controller->rotationSensitivity; // The x-axis controls the yaw
+            // }
 
             // We prevent the pitch from exceeding a certain angle from the XZ plane to prevent gimbal locks
             if (rotation.x < -glm::half_pi<float>() * 0.99f)
@@ -114,8 +115,7 @@ namespace our
             glm::vec3 front = glm::vec3(matrix * glm::vec4(0, 0, -1, 0)),
                       up = glm::vec3(matrix * glm::vec4(0, 26, 0, 0)),
                       right = glm::vec3(matrix * glm::vec4(1, 0, 0, 0)),
-                      forward=glm::vec3(matrix * glm::vec4(0, 0, -3, 0));
-
+                      forward = glm::vec3(matrix * glm::vec4(0, 0, -3, 0));
 
             glm::vec3 current_sensitivity = controller->positionSensitivity;
             glm::vec3 down = glm::vec3(matrix * glm::vec4(0, -1, 0, 0)); // -1.0f MESH -2.0f
@@ -129,10 +129,10 @@ namespace our
                 position += front * (deltaTime * current_sensitivity.z);
             if (app->getKeyboard().isPressed(GLFW_KEY_DOWN) && !isCollidingBack)
                 position -= front * (deltaTime * current_sensitivity.z);
-                // A & D moves the player left or right
+            // A & D moves the player left or right
             if (app->getKeyboard().isPressed(GLFW_KEY_RIGHT) && !isCollidingRight)
                 position += right * (deltaTime * current_sensitivity.x);
-            if (app->getKeyboard().isPressed(GLFW_KEY_LEFT)  && !isCollidingLeft)
+            if (app->getKeyboard().isPressed(GLFW_KEY_LEFT) && !isCollidingLeft)
                 position -= right * (deltaTime * current_sensitivity.x);
             // Q & E moves the player up and down
             // AAO
@@ -156,35 +156,38 @@ namespace our
                     std::cout << "ANA PLAYER CONTINUE " << std::endl;
                     continue;
                 }
-                std::cout << "ANA Mesh Player" << std::endl;
+                // std::cout << "ANA Mesh Player" << std::endl;
                 glm::vec3 jakeAbsPosition = position + glm::vec3(0.0f, -1.0f, -1.1f);
                 std::cout << "jakeAbsPosition:   " << (jakeAbsPosition.x) << "    " << (jakeAbsPosition.y) << "  " << abs(jakeAbsPosition.z) << std::endl;
                 CollisionComponent *tmpcol = entity->getComponent<CollisionComponent>();
                 if (tmpcol)
                 {
-                    std::cout << "tmpcol->start: " << (tmpcol->start.x)<<" "<<(tmpcol->start.y)<<" "<<abs(tmpcol->start.z) << std::endl;
-                    std::cout << "tmpcol->end: " << (tmpcol->end.x) <<" "<< (tmpcol->end.y)<<" "<<abs(tmpcol->end.z)<<std::endl;
+                    // std::cout << "tmpcol->start: " << (tmpcol->start.x) << " " << (tmpcol->start.y) << " " << abs(tmpcol->start.z) << std::endl;
+                    // std::cout << "tmpcol->end: " << (tmpcol->end.x) << " " << (tmpcol->end.y) << " " << abs(tmpcol->end.z) << std::endl;
                     isColliding = tmpcol->isColliding((tmpcol->start), (tmpcol->end), (jake->start + position), (jake->end + position));
                     if (isColliding)
                     {
-                        std::cout << "fee Collision " << std::endl;
+                        tmpi = tmpcol;
+                        std::cout << "fee Collision " << tmpi->getID << "                            " << tmpcol->getID << std::endl;
                         isAboveBlock = jakeAbsPosition.y > tmpcol->end.y;
-                        std::cout<<"isAboveBlock = "<<isAboveBlock<<std::endl;
-                        if(!isAboveBlock)
+                        std::cout << "isAboveBlock = " << isAboveBlock << std::endl;
+                        if (!isAboveBlock)
                         {
-                            isCollidingFront = abs(jakeAbsPosition.z) >= abs(tmpcol->start.z) && abs(jakeAbsPosition.z) < abs(tmpcol->start.z)+0.1;
-                            std::cout<<"isCollidingFront = "<<isCollidingFront<<std::endl;
-                            isCollidingBack = abs(jakeAbsPosition.z) <= abs(tmpcol->end.z) && abs(jakeAbsPosition.z) > abs(tmpcol->end.z)-0.1;
-                            std::cout<<"isCollidingBack = "<<isCollidingBack<<std::endl;
+                            isCollidingFront = abs(jakeAbsPosition.z) >= abs(tmpcol->start.z) && abs(jakeAbsPosition.z) < abs(tmpcol->start.z) + 0.1;
+                            std::cout << "isCollidingFront = " << isCollidingFront << std::endl;
+                            isCollidingBack = abs(jakeAbsPosition.z) <= abs(tmpcol->end.z) && abs(jakeAbsPosition.z) > abs(tmpcol->end.z) - 0.1;
+                            std::cout << "isCollidingBack = " << isCollidingBack << std::endl;
                             isCollidingLeft = jakeAbsPosition.x >= tmpcol->end.x;
-                            std::cout<<"isCollidingLeft = "<<isCollidingLeft<<std::endl;
+                            std::cout << "isCollidingLeft = " << isCollidingLeft << std::endl;
                             isCollidingRight = jakeAbsPosition.x <= tmpcol->start.x;
-                            std::cout<<"isCollidingRight = "<<isCollidingRight<<std::endl;
+                            std::cout << "isCollidingRight = " << isCollidingRight << std::endl;
                         }
                         isBelowBlock = jakeAbsPosition.y <= tmpcol->start.y;
-                        std::cout<<"isBelowBlock = "<<isBelowBlock<<std::endl;
+                        std::cout << "isBelowBlock = " << isBelowBlock << std::endl;
                     }
-                    else
+                    // else
+                    // {
+                    if (tmpi == tmpcol && !isColliding)
                     {
                         isAboveBlock = false;
                         isCollidingFront = false;
@@ -194,13 +197,14 @@ namespace our
                         isBelowBlock = false;
                         std::cout << "Mafeesh Collision " << std::endl;
                     }
+                    // }
                 }
                 // std::cout << "ana hena 7 entity name: " << entity->name << std::endl;
             }
-            if (app->getKeyboard().justPressed(GLFW_KEY_SPACE) && !isPlayerJumping && !isPlayerFalling)
+            if (app->getKeyboard().isPressed(GLFW_KEY_SPACE) && !isPlayerJumping && !isPlayerFalling)
             {
                 controller->isJumping = true;
-                if (!isPlayerFalling )
+                if (!isPlayerFalling)
                 {
                     controller->position = position;
                 }
@@ -210,7 +214,7 @@ namespace our
                 if (position.y <= (controller->position).y + 3.0f && (!isBelowBlock))
                 {
                     position += up * (deltaTime * current_sensitivity.y * 0.1f);
-                    //position += forward * (deltaTime * current_sensitivity.z * 0.1f);
+                    // position += forward * (deltaTime * current_sensitivity.z * 0.1f);
                 }
                 else
                 {
@@ -230,11 +234,10 @@ namespace our
                     controller->isFalling = false;
                 }
             }
-            if(!isAboveBlock && !isPlayerJumping && !isPlayerFalling)
+            if (!isAboveBlock && !isPlayerJumping && !isPlayerFalling)
             {
                 controller->isFalling = true;
             }
-            
         }
 
         // When the state exits, it should call this function to ensure the mouse is unlocked

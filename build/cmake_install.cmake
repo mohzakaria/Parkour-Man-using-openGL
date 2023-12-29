@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/CMPN205 Project - Student Version
+# Install script for directory: D:/FinalClone/CMPN205-Project---Student-Version/CMPN205 Project - Student Version
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/vendor/glfw/cmake_install.cmake")
+  include("D:/FinalClone/CMPN205-Project---Student-Version/build/vendor/glfw/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Momo/Documents/GitHub/CMPN205-Project---Student-Version/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/FinalClone/CMPN205-Project---Student-Version/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
