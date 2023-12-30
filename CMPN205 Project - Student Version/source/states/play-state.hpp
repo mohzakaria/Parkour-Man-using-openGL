@@ -4,6 +4,7 @@
 
 #include <ecs/world.hpp>
 #include <systems/forward-renderer.hpp>
+#include <systems/light.hpp>
 #include <systems/free-camera-controller.hpp>
 #include <systems/movement.hpp>
 #include <asset-loader.hpp>
@@ -15,6 +16,7 @@ class Playstate: public our::State {
     our::ForwardRenderer renderer;
     our::FreeCameraControllerSystem cameraController;
     our::MovementSystem movementSystem;
+    our::LightSystem lightSystem;
 
     void onInitialize() override {
         // First of all, we get the scene configuration from the app config
@@ -32,6 +34,7 @@ class Playstate: public our::State {
         // Then we initialize the renderer
         auto size = getApp()->getFrameBufferSize();
         renderer.initialize(size, config["renderer"]);
+      
     }
 
     void onDraw(double deltaTime) override {
@@ -43,7 +46,7 @@ class Playstate: public our::State {
 
         // Get a reference to the keyboard object
         auto& keyboard = getApp()->getKeyboard();
-
+          lightSystem.update(&world);
         if(keyboard.justPressed(GLFW_KEY_ESCAPE)){
             // If the escape  key is pressed in this frame, go to the play state
             getApp()->changeState("menu");

@@ -7,6 +7,7 @@
 #include "movement.hpp"
 #include "collision.hpp"
 #include "../components/player.hpp"
+#include "../components/light.hpp"
 // #include "player.hpp"
 
 namespace our
@@ -43,6 +44,10 @@ namespace our
         else if (type == PlayerComponent::getID())
         {
             component = entity->addComponent<PlayerComponent>();
+        }
+        else if(type == LightComponent::getID())
+        {
+            component = entity->addComponent<LightComponent>();
         }
         if (component)
             component->deserialize(data);

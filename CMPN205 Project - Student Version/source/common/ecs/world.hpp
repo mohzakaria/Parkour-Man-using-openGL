@@ -5,12 +5,25 @@
 
 namespace our {
 
+    struct Light
+    {
+        int kind;
+        glm::vec3 position;
+        glm::vec3 direction;
+        glm::vec3 color;
+        glm::vec3 attenuation;
+        glm::vec2 cone_angles;
+    };
+
     // This class holds a set of entities
     class World {
         std::unordered_set<Entity*> entities; // These are the entities held by this world
         std::unordered_set<Entity*> markedForRemoval; // These are the entities that are awaiting to be deleted
                                                       // when deleteMarkedEntities is called
     public:
+        Light lights[16];//the array of lights in the scene "max 16 lights"
+        //this array will be used to send the data to the shader in the forward rendering class
+        int light_count = 0;//the number of lights in the scene
 
         World() = default;
 

@@ -86,14 +86,14 @@ namespace our
             bool isPlayerJumping = controller->isJumping;
             bool isPlayerFalling = controller->isFalling; // AAO
 
-            // If the left mouse button is pressed, we get the change in the mouse location
-            // and use it to update the camera rotation
-            // if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1))
-            // {
-            //     glm::vec2 delta = app->getMouse().getMouseDelta();
-            //     // rotation.x -= delta.y * controller->rotationSensitivity; // The y-axis controls the pitch
-            //     rotation.y -= delta.x * controller->rotationSensitivity; // The x-axis controls the yaw
-            // }
+            //If the left mouse button is pressed, we get the change in the mouse location
+            //and use it to update the camera rotation
+            if (app->getMouse().isPressed(GLFW_MOUSE_BUTTON_1))
+            {
+                glm::vec2 delta = app->getMouse().getMouseDelta();
+                rotation.x -= delta.y * controller->rotationSensitivity; // The y-axis controls the pitch
+                rotation.y -= delta.x * controller->rotationSensitivity; // The x-axis controls the yaw
+            }
 
             // We prevent the pitch from exceeding a certain angle from the XZ plane to prevent gimbal locks
             if (rotation.x < -glm::half_pi<float>() * 0.99f)
@@ -156,9 +156,10 @@ namespace our
                     std::cout << "ANA PLAYER CONTINUE " << std::endl;
                     continue;
                 }
+                
                 // std::cout << "ANA Mesh Player" << std::endl;
                 glm::vec3 jakeAbsPosition = position + glm::vec3(0.0f, -1.0f, -1.1f);
-                std::cout << "jakeAbsPosition:   " << (jakeAbsPosition.x) << "    " << (jakeAbsPosition.y) << "  " << abs(jakeAbsPosition.z) << std::endl;
+                //std::cout << "jakeAbsPosition:   " << (jakeAbsPosition.x) << "    " << (jakeAbsPosition.y) << "  " << abs(jakeAbsPosition.z) << std::endl;
                 CollisionComponent *tmpcol = entity->getComponent<CollisionComponent>();
                 if (tmpcol)
                 {
@@ -167,6 +168,7 @@ namespace our
                     isColliding = tmpcol->isColliding((tmpcol->start), (tmpcol->end), (jake->start + position), (jake->end + position));
                     if (isColliding)
                     {
+
                         tmpi = tmpcol;
                         std::cout << "fee Collision " << tmpi->getID << "                            " << tmpcol->getID << std::endl;
                         isAboveBlock = jakeAbsPosition.y > tmpcol->end.y;
@@ -174,16 +176,16 @@ namespace our
                         if (!isAboveBlock)
                         {
                             isCollidingFront = abs(jakeAbsPosition.z) >= abs(tmpcol->start.z) && abs(jakeAbsPosition.z) < abs(tmpcol->start.z) + 0.1;
-                            std::cout << "isCollidingFront = " << isCollidingFront << std::endl;
+                            //std::cout << "isCollidingFront = " << isCollidingFront << std::endl;
                             isCollidingBack = abs(jakeAbsPosition.z) <= abs(tmpcol->end.z) && abs(jakeAbsPosition.z) > abs(tmpcol->end.z) - 0.1;
-                            std::cout << "isCollidingBack = " << isCollidingBack << std::endl;
+                            //std::cout << "isCollidingBack = " << isCollidingBack << std::endl;
                             isCollidingLeft = jakeAbsPosition.x >= tmpcol->end.x;
-                            std::cout << "isCollidingLeft = " << isCollidingLeft << std::endl;
+                            //std::cout << "isCollidingLeft = " << isCollidingLeft << std::endl;
                             isCollidingRight = jakeAbsPosition.x <= tmpcol->start.x;
-                            std::cout << "isCollidingRight = " << isCollidingRight << std::endl;
+                            //std::cout << "isCollidingRight = " << isCollidingRight << std::endl;
                         }
                         isBelowBlock = jakeAbsPosition.y <= tmpcol->start.y;
-                        std::cout << "isBelowBlock = " << isBelowBlock << std::endl;
+                        //std::cout << "isBelowBlock = " << isBelowBlock << std::endl;
                     }
                     // else
                     // {

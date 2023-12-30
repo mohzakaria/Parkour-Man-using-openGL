@@ -58,6 +58,9 @@
     <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\collision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -195,6 +198,9 @@
     <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\player.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\components\light.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\forward-renderer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -202,6 +208,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\movement.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Momo\Documents\GitHub\CMPN205-Project---Student-Version\CMPN205 Project - Student Version\source\common\systems\light.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

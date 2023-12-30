@@ -1,31 +1,15 @@
-#include "light.hpp"
+#include "./light.hpp"
 #include "../ecs/entity.hpp"
 #include "../deserialize-utils.hpp"
-
 namespace our
 {
     void LightComponent::deserialize(const nlohmann::json &data)
     {
-        // Check if the JSON data is an object
         if (!data.is_object())
             return;
-
-        // Read the "lightType" value from the JSON object or use the default value from the member variable
-        lightType = data.value("lightType", lightType);
-
-        // Read the "position" value from the JSON object or use the default value from the member variable
-        position = data.value("position", position);
-
-        // Read the "direction" value from the JSON object or use the default value from the member variable
-        direction = data.value("direction", direction);
-
-        // Read the "color" value from the JSON object or use the default value from the member variable
-        color = data.value("color", color);
-
-        // Read the "attenuation" value from the JSON object or use the default value from the member variable
-        attenuation = data.value("attenuation", attenuation);
-
-        // Read the "cone_angles" value from the JSON object or use the default value from the member variable
-        cone_angles = data.value("cone_angles", cone_angles);
+        kind = data.value("kind", 0);//default value is directional light
+        color = data.value("color", glm::vec3(1.0f));//default color is white
+        attenuation = data.value("attenuation",  glm::vec3(1.0f));//default attenuation is 1
+        cone_angles = glm::radians(data.value("cone_angles", glm::vec2(0.0f)));//default cone angles is 0
     }
 }

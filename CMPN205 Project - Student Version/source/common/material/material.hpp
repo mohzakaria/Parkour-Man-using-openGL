@@ -21,6 +21,8 @@ namespace our {
         PipelineState pipelineState;
         ShaderProgram* shader;
         bool transparent;
+         bool affectedByLight;//this variable will be used to determine if the object is affected by light sources or not
+
         
         // This function does 2 things: setup the pipeline state and set the shader program to be used
         virtual void setup() const;
@@ -53,11 +55,11 @@ namespace our {
         void deserialize(const nlohmann::json& data) override;
     };
 
-    class LightMaterial : public TintedMaterial {
+    class LightMaterial : public Material {
     public:
         Sampler* sampler;
         Texture2D* albedo;
-        Texture2D* ambientOcclusion;
+        Texture2D* ambient_occlusion;
         Texture2D* roughness;
         Texture2D* specular;
         Texture2D* emissive;
@@ -71,7 +73,13 @@ namespace our {
             return new TintedMaterial();
         } else if(type == "textured"){
             return new TexturedMaterial();
-        } else {
+        }
+         else if (type == "light")
+        {
+            // std::cout<<"light material created"<<std::endl;
+            return new LightMaterial();
+        } 
+        else {
             return new Material();
         }
     }
