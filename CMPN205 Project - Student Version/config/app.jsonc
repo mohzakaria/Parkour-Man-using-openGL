@@ -78,8 +78,8 @@
             }
           },
           "albedo": "netherPortal",
-          "ambient_occlusion": "  netherPortal",
-          "roughness": " netherPortal",  
+          "ambient_occlusion": "netherPortal",
+          "roughness": "netherPortal",  
           "emissive": "netherPortal",
           "specular": "netherPortal",
           "sampler": "default"
